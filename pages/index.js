@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <div className='text-white  min-h-screen'>
         <div className='flex w-[60%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
-          <img src='/Images/profile.jpg' className='w-[25rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500'></img>
+          <Image alt='My photo' src='/Images/profile.jpg' className='w-[25rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500'></Image>
           <div className='float-left ml-7 flex flex-col justify-between py-7'>
             <h1 className='text-[6rem] leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
