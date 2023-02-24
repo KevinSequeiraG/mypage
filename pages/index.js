@@ -19,18 +19,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='text-white  min-h-screen'>
-        <div className='flex w-[60%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
-          <Image alt='My photo' src='/Images/profile.jpg' className='w-[25rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500'></Image>
-          <div className='float-left ml-7 flex flex-col justify-between py-7'>
-            <h1 className='text-[6rem] leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
+        <div className='md:flex md:w-[60%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+          <Image width={0} height={0} alt='My photo' src='/Images/profile.jpg' className='w-[15rem] md:w-[25rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></Image>
+          <div className='float-left md:ml-7 ml-0 flex flex-col justify-between py-7'>
+            <h1 className='text-[1.5rem] md:text-[6rem] md:text-left text-center md:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='text-[2rem]'>Ingeniero del Software</p>
-              <p>Soy un desarrollador con grandes capacidades de desarrollo de software, con la misma facilidad de trabajar en equipo como de trabajar de manera solitaria, además me encanta aprender nuevas tecnologías y esto implica que si debo investigar como hacer alguna tarea, lo haré de una manera profesional.</p>
+              <p className='md:text-[2rem]'>Ingeniero del Software</p>
+              <p className='text-[.7rem] md:text-[1rem]'>Soy un desarrollador con grandes capacidades de desarrollo de software, con la misma facilidad de trabajar en equipo como de trabajar de manera solitaria, además me encanta aprender nuevas tecnologías y esto implica que si debo investigar como hacer alguna tarea, lo haré de una manera profesional.</p>
             </div>
           </div>
         </div>
       </div>
-      <div className='px-[10rem] pb-[10rem]'>
+      <div className='md:px-[10rem] pb-[10rem]'>
         <div className='flex my-32'>
           <StudiesModal />
         </div>
