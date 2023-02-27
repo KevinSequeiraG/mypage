@@ -5,6 +5,7 @@ const StudyCard = (props) => {
 
     useEffect(() => {
       setIsMobile(navigator.userAgentData.mobile)
+      alert(navigator.userAgentData.mobile);
     }, [])
     
 
