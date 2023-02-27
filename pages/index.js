@@ -29,7 +29,7 @@ export default function Home() {
       <div data-aos="fade-up" className='text-white  min-h-screen'>
         <div className='md:flex md:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
           <div className='flex align-center w-full'>
-            <Image width={0} height={0} alt='My photo' src='/Images/bg2.jpg' className='w-[15rem] md:w-[20rem] md:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></Image>
+            <img alt='My photo' src='/Images/profile.jpg' className='w-[15rem] md:w-[20rem] md:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
           <div className='float-left md:ml-7 ml-0 flex flex-col justify-between py-7'>
             <h1 className='text-[1.5rem] md:text-[6rem] md:text-left text-center md:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
