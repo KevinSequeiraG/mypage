@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import StudiesModal from '../components/studiesModal'
 import LaboralExpModal from '../components/laboralExpModal'
@@ -12,7 +11,9 @@ import { useEffect } from 'react'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   useEffect(() => {
+
     Aos.init({
       duration: 2000
     });

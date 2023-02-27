@@ -1,16 +1,7 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import StudyCard from "../../components/StudyCard";
 
 const Studies = () => {
-    const [isMobile, setIsMobile] = useState()
-
-
-    useEffect(() => {
-        let details = navigator.userAgent;
-        let regexp = /android|iphone|kindle|ipad/i
-        setIsMobile(regexp.test(details))
-    }, [])
 
     return (
         <div className='MainBg text-white min-h-screen py-10'>
@@ -21,9 +12,9 @@ const Studies = () => {
                 </div>
             </div>
             <div className="md:flex">
-                <StudyCard isMobile={isMobile} animation={()=>{isMobile?'zoom-in-right':'zoom-in'}} image={'Images/utn.png'} name={"Universidad Técnica Nacional"} startDate={'Enero, 2020'} finishDate={'Actualmente'} careerName={'Ingeniería del Software'} />
-                <StudyCard isMobile={isMobile} animation={()=>{isMobile?'zoom-in-right':'zoom-in'}} image={'Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startDate={'Febrero, 2017'} finishDate={'Diciembre, 2019'} careerName={'Informática Empresarial'} />
-                <StudyCard isMobile={isMobile} animation={()=>{isMobile?'zoom-in-right':'zoom-in'}} image={'Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startDate={'Febrero, 2012'} finishDate={'Diciembre, 2016'} careerName={'Bachillerato'} />
+                <StudyCard animation={'zoom-in'} image={'Images/utn.png'} name={"Universidad Técnica Nacional"} startDate={'Enero, 2020'} finishDate={'Actualmente'} careerName={'Ingeniería del Software'} />
+                <StudyCard animation={'zoom-in'} image={'Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startDate={'Febrero, 2017'} finishDate={'Diciembre, 2019'} careerName={'Informática Empresarial'} />
+                <StudyCard animation={'zoom-in'} image={'Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startDate={'Febrero, 2012'} finishDate={'Diciembre, 2016'} careerName={'Bachillerato'} />
             </div>
         </div>
     )
