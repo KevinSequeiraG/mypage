@@ -5,9 +5,7 @@ const StudyCard = (props) => {
 
     useEffect(() => {
       setIsMobile(navigator.userAgentData.mobile)
-      alert(navigator.userAgentData.mobile);
     }, [])
-    
 
     return(
         <div data-aos={isMobile?props.mobileAnimation:props.animation} className="w-[85%] mx-auto border-2 border-[#B8B8B8] rounded-xl my-8 py-5 px-3 text-center">

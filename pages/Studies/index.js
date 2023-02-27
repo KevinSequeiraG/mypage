@@ -12,8 +12,8 @@ const Studies = () => {
             </div>
             <div className="md:flex">
                 <StudyCard mobileAnimation={"zoom-in-right"} animation={'zoom-in'} image={'Images/utn.png'} name={"Universidad Técnica Nacional"} startDate={'Enero, 2020'} finishDate={'Actualmente'} careerName={'Ingeniería del Software'} />
-                <StudyCard mobileAnimation={"zoom-in-left"} animation={'zoom-in'} image={'Images/grego.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startDate={'Febrero, 2017'} finishDate={'Diciembre, 2019'} careerName={'Informática Empresarial'} />
-                <StudyCard mobileAnimation={"zoom-in-right"} animation={'zoom-in'} image={'Images/calufa.jpg'} name={"Colegio Grogorio José Ramírez"} startDate={'Febrero, 2012'} finishDate={'Diciembre, 2016'} careerName={'Bachillerato'} />
+                <StudyCard mobileAnimation={"zoom-in-left"} animation={'zoom-in'} image={'Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startDate={'Febrero, 2017'} finishDate={'Diciembre, 2019'} careerName={'Informática Empresarial'} />
+                <StudyCard mobileAnimation={"zoom-in-right"} animation={'zoom-in'} image={'Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startDate={'Febrero, 2012'} finishDate={'Diciembre, 2016'} careerName={'Bachillerato'} />
             </div>
         </div>
     )
