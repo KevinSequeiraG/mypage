@@ -5,10 +5,19 @@ import StudiesModal from '../components/studiesModal'
 import LaboralExpModal from '../components/laboralExpModal'
 import PersonalProjectsModal from '../components/personalProjectsModal'
 import AboutMeModal from '../components/aboutMeModal'
+import Aos from 'aos'
+import { useEffect } from 'react'
+import 'aos/dist/aos.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    });
+  }, [])
+
   return (
     <div className='MainBg text-white'>
       <Head>
@@ -17,9 +26,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='text-white  min-h-screen'>
-        <div className='md:flex md:w-[60%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
-          <Image width={0} height={0} alt='My photo' src='/Images/profile.jpg' className='w-[15rem] md:w-[25rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></Image>
+      <div data-aos="fade-up" className='text-white  min-h-screen'>
+        <div className='md:flex md:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+          <div className='flex align-center w-full'>
+            <Image width={0} height={0} alt='My photo' src='/Images/profile.jpg' className='w-[15rem] md:w-[20rem] md:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></Image>
+          </div>
           <div className='float-left md:ml-7 ml-0 flex flex-col justify-between py-7'>
             <h1 className='text-[1.5rem] md:text-[6rem] md:text-left text-center md:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
@@ -30,16 +41,16 @@ export default function Home() {
         </div>
       </div>
       <div className='md:px-[10rem] pb-[10rem]'>
-        <div className='flex my-32'>
+        <div data-aos="fade-left" data-aos-duration="" className='flex my-32'>
           <StudiesModal />
         </div>
-        <div className='flex my-32 justify-end'>
+        <div data-aos="fade-right" className='flex my-32 justify-end'>
           <LaboralExpModal />
         </div>
-        <div className='flex my-32'>
+        <div data-aos="fade-left" className='flex my-32'>
           <PersonalProjectsModal />
         </div>
-        <div className='flex my-32 justify-end'>
+        <div data-aos="fade-right" className='flex my-32 justify-end'>
           <AboutMeModal />
         </div>
       </div>
