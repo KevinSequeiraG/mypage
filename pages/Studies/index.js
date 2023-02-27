@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import StudyCard from "../../components/StudyCard";
 
 const Studies = () => {
-    const [isMobile, setIsMobile] = useState(false)
+    const [isMobile, setIsMobile] = useState()
 
 
     useEffect(() => {
