@@ -4,10 +4,11 @@ import StudyCard from "../../components/StudyCard";
 
 const Studies = () => {
     const [isMobile, setIsMobile] = useState(false)
-    let details = navigator.userAgent;
-    let regexp = /android|iphone|kindle|ipad/i
+
 
     useEffect(() => {
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i
         setIsMobile(regexp.test(details))
     }, [])
 
