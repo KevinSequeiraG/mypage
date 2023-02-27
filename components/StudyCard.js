@@ -1,5 +1,11 @@
+import { useEffect } from "react";
+
 const StudyCard = (props) => {
-    alert(props.isMobile)
+    useEffect(() => {
+        alert(props.isMobile)  
+    }, [])
+    
+    
 
     return(
         <div data-aos={props.isMobile?props.mobileAnimation:props.animation} className="w-[85%] mx-auto border-2 border-[#B8B8B8] rounded-xl my-8 py-5 px-3 text-center">
