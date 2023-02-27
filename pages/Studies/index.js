@@ -6,7 +6,7 @@ const Studies = () => {
     const [isMobile, setIsMobile] = useState(false)
 
     useEffect(() => {
-        setIsMobile((window.orientation ))
+        setIsMobile(window.orientation)
     }, [])
 
     return (
