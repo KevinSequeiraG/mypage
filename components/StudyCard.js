@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const StudyCard = (props) => {
     useEffect(() => {
-        alert(props.isMobile)  
+        alert(window.orientation)  
     }, [])
     
     
