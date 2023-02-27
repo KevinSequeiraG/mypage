@@ -7,7 +7,7 @@ import PersonalProjectsModal from '../components/personalProjectsModal'
 import AboutMeModal from '../components/aboutMeModal'
 import Aos from 'aos'
 import { useEffect } from 'react'
-import 'aos/dist/aos.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
