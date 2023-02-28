@@ -39,13 +39,13 @@ export default function Home() {
       <nav className='pl-6 pt-5 absolute left-0 z-50'>
         <ul>
           <li>
-            <button onClick={() => setShowSettings(!showSettings)}>
+            <button onClick={() =>{setShowSettings(!showSettings); setFirstClick(true)}}>
               <span class="material-icons">settings</span>
             </button>
           </li>
         </ul>
 
-        <div className={`animate__animated ${showSettings ? 'animate__fadeInTopLeft' : 'animate__fadeOutTopLeft'} border-2 rounded-xl px-3 py-4 bg-black bg-opacity-80 overflow-x-hidden`}>
+        {firstClick ? <div className={`animate__animated ${showSettings ? 'animate__fadeInTopLeft' : 'animate__fadeOutTopLeft'} border-2 rounded-xl px-3 py-4 bg-black bg-opacity-80 overflow-x-hidden`}>
           {/* Theme config */}
           <button className='flex items-center mx-auto'>
             <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
@@ -58,15 +58,15 @@ export default function Home() {
           {/* Language config */}
           <div className='flex justify-center mt-2'>
             <Dropdown class={"!bg-blue-800 rounded-xl !text-white"} label={t("language")}>
-              <Dropdown.Item onClick={() => ChooseLng("en")}>
+              <Dropdown.Item onClick={() => {ChooseLng("en")}}>
                 English
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => ChooseLng("es")}>
+              <Dropdown.Item onClick={() => {ChooseLng("es")}}>
                 Español
               </Dropdown.Item>
             </Dropdown>
           </div>
-        </div>
+        </div> : null}
 
       </nav>
       <div data-aos="fade-up" className='text-white min-h-screen'>
