@@ -6,7 +6,7 @@ const Studies = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='MainBg text-white min-h-screen py-10'>
+        <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen py-10'>
             <div data-aos="zoom-in" data-aos-duration="1000" className="flex items-center mx-6">
                 <Link href={'/'}><button><span class="material-icons">arrow_back</span></button></Link>
                 <div className="w-full text-center">

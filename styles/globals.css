@@ -97,8 +97,11 @@ a {
   }
 }
 
-.MainBg {
-  /* background: rgb(57, 80, 195); */
+/* .MainBg {
+  background: radial-gradient(circle, rgba(57, 80, 195, 1) 0%, rgba(0, 0, 0, 1) 85%);
+} */
+
+.dark\:MainBg {
   background: radial-gradient(circle, rgba(57, 80, 195, 1) 0%, rgba(0, 0, 0, 1) 85%);
 }
 
