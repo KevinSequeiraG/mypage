@@ -69,10 +69,7 @@ export default function Home() {
           </li>
         </ul>
 
-        {firstClick ? <div className={`animate__animated ${showSettings ? 'animate__fadeInTopLeft' : 'animate__fadeOutTopLeft'} border-2 rounded-xl px-3 py-4 bg-black bg-opacity-80 overflow-x-hidden`}>
-          <div className='flex justify-between items-center'>
-          
-          </div>
+        {firstClick ? <div id='settingsId' className={`overflow-hidden animate__animated ${showSettings ? 'animate__fadeInTopLeft' : 'animate__fadeOutTopLeft'} border-2 rounded-xl px-3 py-4 bg-black bg-opacity-80 overflow-x-hidden`}>
           {/* Theme config */}
           <button className='flex mx-auto' >
             <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
@@ -80,12 +77,12 @@ export default function Home() {
           </button>
 
           {/* Language config */}
-          <div className='flex justify-center mt-2'>
-            <Dropdown class={"!bg-blue-800 rounded-xl !text-white"} label={t("language")}>
-              <Dropdown.Item onClick={() => { ChooseLng("en") }}>
+          <div className='flex justify-center mt-2 !overflow-hidden h-auto'>
+            <Dropdown onClick={()=>{document.getElementById("settingsId").classList.contains("h-[13rem]")?document.getElementById("settingsId").classList.remove("h-[13rem]"):document.getElementById("settingsId").classList.add("h-[13rem]")}} class={"!bg-blue-800 rounded-xl !text-white z-50 h-auto"} label={t("language")}>
+              <Dropdown.Item onClick={() => { ChooseLng("en"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
                 English
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => { ChooseLng("es") }}>
+              <Dropdown.Item onClick={() => { ChooseLng("es"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
                 Español
               </Dropdown.Item>
             </Dropdown>
