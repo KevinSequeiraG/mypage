@@ -44,13 +44,7 @@ export default function Home() {
     }, 250);
   }
 
-  const ChangeTheme = () => {
-    theme == "dark" ? setTheme("") : setTheme("dark")
-    window.localStorage.setItem("color-theme", theme)
-  }
-
   useEffect(() => {
-    console.log("object", window.localStorage.getItem('color-theme'));
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark');
     } else {
@@ -80,7 +74,7 @@ export default function Home() {
           
           </div>
           {/* Theme config */}
-          <button className='flex mx-auto' onClick={() => ChangeTheme}>
+          <button className='flex mx-auto' >
             <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
             {renderTheme()}
           </button>
