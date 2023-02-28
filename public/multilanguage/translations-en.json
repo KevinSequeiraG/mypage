@@ -28,5 +28,6 @@
     "nov": "November",
     "dec": "December",
     "current":"Currently",
-    "theme":"Theme"
+    "theme":"Theme",
+    "language":"Language"
 }
