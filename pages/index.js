@@ -7,10 +7,11 @@ import AboutMeModal from '../components/aboutMeModal'
 import Aos from 'aos'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Dropdown } from "flowbite-react";
+
 import '../public/multilanguage/i18n'
 import 'flowbite';
 import { useTheme } from 'next-themes'
+import SettingsBtn from '../components/settingsBtn'
 
 export default function Home() {
   const [t, i18n] = useTranslation();
@@ -44,14 +45,6 @@ export default function Home() {
     }, 250);
   }
 
-  useEffect(() => {
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [])
-
   return (
     <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white'>
       <Head>
@@ -60,36 +53,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <nav className='pl-6 pt-5 absolute left-0 z-50'>
-        <ul>
-          <li>
-            <button onClick={() => { setShowSettings(!showSettings); setFirstClick(true) }}>
-              <span class="material-icons">settings</span>
-            </button>
-          </li>
-        </ul>
 
-        {firstClick ? <div id='settingsId' className={`overflow-hidden animate__animated ${showSettings ? 'animate__fadeInTopLeft' : 'animate__fadeOutTopLeft'} border-2 rounded-xl px-3 py-4 bg-black bg-opacity-80 overflow-x-hidden`}>
-          {/* Theme config */}
-          <button className='flex mx-auto' >
-            <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
-            {renderTheme()}
-          </button>
+      <div className='absolute top-5'>
+        <SettingsBtn />
+      </div>
 
-          {/* Language config */}
-          <div className='flex justify-center mt-2 !overflow-hidden h-auto'>
-            <Dropdown onClick={()=>{document.getElementById("settingsId").classList.contains("h-[13rem]")?document.getElementById("settingsId").classList.remove("h-[13rem]"):document.getElementById("settingsId").classList.add("h-[13rem]")}} class={"!bg-blue-800 rounded-xl !text-white z-50 h-auto"} label={t("language")}>
-              <Dropdown.Item onClick={() => { ChooseLng("en"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
-                English
-              </Dropdown.Item>
-              <Dropdown.Item onClick={() => { ChooseLng("es"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
-                Español
-              </Dropdown.Item>
-            </Dropdown>
-          </div>
-        </div> : null}
 
-      </nav>
       <div data-aos="fade-up" className='text-white min-h-screen'>
         <div className='md:flex md:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
           <div className='flex align-center w-full'>

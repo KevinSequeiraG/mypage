@@ -14,7 +14,7 @@
     "see-experience": "Ver experiencia",
     "software-engineering": "Ingeniería del Software",
     "bachelor": "Bachillerato",
-    "business-computing": "Business Computing",    
+    "business-computing": "Informática Empresarial",    
     "jan": "Enero",
     "feb": "Febrero",
     "mar": "Marzo",
@@ -29,5 +29,6 @@
     "dec": "Diciembre",
     "current":"Actualmente",
     "theme":"Tema",
-    "language":"Idioma"
+    "language":"Idioma",
+    "soft-engineer":"Ingeniero del Software"
 }
