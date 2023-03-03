@@ -25,25 +25,8 @@ export default function Home() {
       duration: 2000
     });
     setMounted(true)
+
   }, [])
-
-  const renderTheme = () => {
-    if (!mounted) {
-      return null;
-    }
-    const currentTheme = theme === 'system' ? systemTheme : theme;
-    if (currentTheme == "dark") {
-      return (<button onClick={() => { setTheme('light') }} ><span class="material-icons">dark_mode</span></button>)
-    } else {
-      return (<button className="w-7 h-7" onClick={() => { setTheme('dark') }} ><span class="material-icons">light_mode</span></button>)
-    }
-  }
-
-  const ChooseLng = (lng) => {
-    setTimeout(() => {
-      i18n.changeLanguage(lng);
-    }, 250);
-  }
 
   return (
     <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white'>

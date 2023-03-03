@@ -30,5 +30,9 @@
     "current":"Currently",
     "theme":"Theme",
     "language":"Language",
-    "soft-engineer":"Software engineer"
+    "soft-engineer":"Software engineer",
+    "job-desc-doit":"Using different technologies like NextJs, Tailwindcss and Firebase I developed different functions and visuals for a web application.",
+    "job-desc-immerso":"Participation in the creation of different web applications, making use of augmented reality technologies, such as ARjs and AFRAME, in addition to being in charge of implementing, through languages such as CSS3 and technologies such as Bootstrap, the graphic design of some pages implementing Reactjs.",
+    "description":"Description",
+    "tools-list":"Lista de herramientas"
 }
