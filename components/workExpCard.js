@@ -4,6 +4,8 @@ const WorkExpCard = (props) => {
     const { t } = useTranslation();
 
     const OpenJobModal = () => {
+        window.localStorage.setItem("job-description", props.description)
+        window.localStorage.setItem("job-tools", JSON.stringify(props.tools))
         document.getElementById("workExpCardBtn").dispatchEvent(new CustomEvent("opened-more-job"))
     }
 
@@ -14,7 +16,7 @@ const WorkExpCard = (props) => {
                 <h2 className="my-2">{props.name}</h2>
                 <p className="my-2">{t(props.position)}</p>
                 <p>{t(props.startMonth) + ', ' + props.startYear + ' - ' + t(props.finishMonth) + ', ' + props.finishYear}</p>
-                <button onClick={()=>OpenJobModal()} id="workExpCardBtn" className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
+                <button onClick={() => OpenJobModal()} id="workExpCardBtn" className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
             </div>
         </>
     )

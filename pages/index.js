@@ -26,6 +26,15 @@ export default function Home() {
     });
     setMounted(true)
 
+    console.log(document.getElementById('nav'));
+    window.addEventListener('click', function (e) {
+      if (document.getElementById('nav').contains(e.target)) {
+        // Clicked in box
+      } else {
+        // Clicked outside the box
+        this.document.dispatchEvent(new CustomEvent("CloseSettings"))
+      }
+    });
   }, [])
 
   return (
