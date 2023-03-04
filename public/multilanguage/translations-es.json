@@ -34,5 +34,7 @@
     "job-desc-doit":"Usando diferentes tecnologías como NextJs, Tailwindcss y Firebase desarrollé diferentes funciones y visuales para una aplicación web.",
     "job-desc-immerso":"Participación en la creación de diferentes aplicaciones web, haciendo uso de tecnologías de realidad aumentada, como ARjs y AFRAME, además de encargarse de implementar, a través de lenguajes como CSS3 y tecnologías como Bootstrap, el diseño gráfico de algunas páginas implementando Reactjs.",
     "description":"Descripción",
-    "tools-list":"Tools list"
+    "tools-list":"Lista de herramientas",
+    "footer-explication":"Para esta página se hizo uso de Nextjs, Tailwind, AOS(Animate on scroll), Animate.css, entre otras librerias. Link del repositorio:",
+    "visit":"Visitar"
 }

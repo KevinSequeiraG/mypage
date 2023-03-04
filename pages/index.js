@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='md:px-[10rem] pb-[10rem]'>
+      <div className='md:px-[10rem] '>
         <div data-aos="fade-left" className='flex md:my-32'>
           <StudiesModal />
         </div>
