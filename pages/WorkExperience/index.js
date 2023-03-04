@@ -1,4 +1,6 @@
+import Aos from "aos";
 import Link from "next/link";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import MoreOfJobModal from "../../components/moreOfJobModal";
 import SettingsBtn from "../../components/settingsBtn";
@@ -6,6 +8,13 @@ import WorkExpCard from "../../components/workExpCard";
 
 const WorkExperience = () => {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000
+          });
+    }, [])
+    
 
     return (
         <>
