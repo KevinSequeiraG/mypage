@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
 const AboutMeModal = () => {
@@ -8,7 +9,9 @@ const AboutMeModal = () => {
             <h2 className="text-[1.4rem] md:text-[2rem] mb-4">{t("know-a-little-more-about-me")}</h2>
             <p className="text-[.8rem] md:text-[1rem] text-justify">{t("about-me-explication")}</p>
             <div className="w-full text-right">
-                <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
+                <Link href={"AboutMe"}>
+                    <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
+                </Link>
             </div>
         </div>
     )

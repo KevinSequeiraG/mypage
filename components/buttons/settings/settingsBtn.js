@@ -47,7 +47,7 @@ const SettingsBtn = () => {
     }, [])
 
     return (
-        <nav id="nav" className='pl-6 pt-2 absolute left-0 z-50'>
+        <nav id="nav" className='pl-8 pt-2 absolute left-0 z-50'>
             <ul>
                 <li>
                     <button onClick={() => { setShowSettings(!showSettings); setFirstClick(true) }}>
