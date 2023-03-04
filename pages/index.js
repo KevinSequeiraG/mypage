@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
-import StudiesModal from '../components/studiesModal'
-import LaboralExpModal from '../components/laboralExpModal'
-import PersonalProjectsModal from '../components/personalProjectsModal'
-import AboutMeModal from '../components/aboutMeModal'
+import StudiesModal from '../components/modals/studiesModal'
+import LaboralExpModal from '../components/modals/laboralExpModal'
+import PersonalProjectsModal from '../components/modals/personalProjectsModal'
+import AboutMeModal from '../components/modals/aboutMeModal'
 import Aos from 'aos'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -11,7 +11,8 @@ import { useTranslation } from 'react-i18next'
 import '../public/multilanguage/i18n'
 import 'flowbite';
 import { useTheme } from 'next-themes'
-import SettingsBtn from '../components/settingsBtn'
+import SettingsBtn from '../components/buttons/settings/settingsBtn'
+import Footer from '../components/sections/footer'
 
 export default function Home() {
   const [t, i18n] = useTranslation();
@@ -78,7 +79,10 @@ export default function Home() {
         <div data-aos="fade-right" className='flex my-32 justify-end'>
           <AboutMeModal />
         </div>
+
       </div>
+
+      <Footer />
     </div>
   )
 }

@@ -2,9 +2,9 @@ import Aos from "aos";
 import Link from "next/link";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import MoreOfJobModal from "../../components/moreOfJobModal";
-import SettingsBtn from "../../components/settingsBtn";
-import WorkExpCard from "../../components/workExpCard";
+import MoreOfJobModal from "../../components/modals/moreOfJobModal";
+import SettingsBtn from "../../components/buttons/settings/settingsBtn";
+import WorkExpCard from "../../components/cards/workExpCard";
 
 const WorkExperience = () => {
     const { t } = useTranslation();

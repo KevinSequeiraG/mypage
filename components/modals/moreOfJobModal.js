@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import Tool from "./tool";
+import Tool from "../tool";
 
 const MoreOfJobModal = (props) => {
     const { t } = useTranslation();

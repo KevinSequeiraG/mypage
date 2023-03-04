@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import SettingsBtn from "../../components/settingsBtn";
-import StudyCard from "../../components/StudyCard";
+import SettingsBtn from "../../components/buttons/settings/settingsBtn";
+import StudyCard from "../../components/cards/StudyCard";
 
 const Studies = () => {
     const { t } = useTranslation();
