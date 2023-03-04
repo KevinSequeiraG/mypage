@@ -1,6 +1,7 @@
 const SocialButtons = () => {
     return (
         <div className="social-icon ">
+            {/* Instagram */}
             <a
                 className="w-[50px] h-[50px] lg:w-[40px] lg:h-[40px] before:w-[60px] lg:before:w-[40px] before:h-[60px] lg:before:h-[40px]"
                 href="https://www.instagram.com/kevin.07.sg/?next=%2F"
@@ -13,6 +14,7 @@ const SocialButtons = () => {
                     alt=""
                 />
             </a>
+            {/* Facebook */}
             <a
                 className="w-[50px] h-[50px] lg:w-[40px] lg:h-[40px] before:w-[60px] lg:before:w-[40px] before:h-[60px] lg:before:h-[40px]"
                 href="https://www.facebook.com/profile.php?id=100075126656673"
@@ -25,6 +27,7 @@ const SocialButtons = () => {
                     alt=""
                 />
             </a>
+            {/* Whatsapp */}
             <a
                 className="w-[50px] h-[50px] lg:w-[40px] lg:h-[40px] before:w-[60px] lg:before:w-[40px] before:h-[60px] lg:before:h-[40px]"
                 href="https://api.whatsapp.com/send?phone=50684525658"
@@ -33,6 +36,32 @@ const SocialButtons = () => {
                     className="w-[50%] lg:w-[40%]"
                     src={
                         "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                    }
+                    alt=""
+                />
+            </a>
+            {/* LinkedIn */}
+            <a
+                className="w-[50px] h-[50px] lg:w-[40px] lg:h-[40px] before:w-[60px] lg:before:w-[40px] before:h-[60px] lg:before:h-[40px]"
+                href="https://www.linkedin.com/in/kevin-sequeira-garita-a906161b5/"
+            >
+                <img
+                    className="w-[50%] lg:w-[40%]"
+                    src={
+                        "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
+                    }
+                    alt=""
+                />
+            </a>
+            {/* Github */}
+            <a
+                className="w-[50px] h-[50px] lg:w-[40px] lg:h-[40px] before:w-[60px] lg:before:w-[40px] before:h-[60px] lg:before:h-[40px]"
+                href="https://github.com/KevinSequeiraG"
+            >
+                <img
+                    className="w-[50%] lg:w-[40%]"
+                    src={
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
                     }
                     alt=""
                 />
