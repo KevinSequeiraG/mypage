@@ -24,8 +24,8 @@ const MoreOfJobModal = (props) => {
                     <p>{t("todo")}</p>
                     <h3>{t("tools-list")}</h3>
                     <ul>
-                        {props.toolsList?.map(tool => {
-                            return <li>{tool}</li>
+                        {props.toolsList?.map((tool, i) => {
+                            return <li key={i}>{tool}</li>
                         })}
                     </ul>
                 </div>
