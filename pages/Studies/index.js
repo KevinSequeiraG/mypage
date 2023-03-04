@@ -2,13 +2,14 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import StudyCard from "../../components/cards/StudyCard";
+import Footer from "../../components/sections/footer";
 
 const Studies = () => {
     const { t } = useTranslation();
 
     return (
         <>
-            <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen py-10'>
+            <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen pt-10 pb-32 relative'>
                 <div className="relative ml-5">
                     <Link href={'/'}><button className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button></Link>
                     <SettingsBtn />
@@ -21,6 +22,7 @@ const Studies = () => {
                     <StudyCard animation={'zoom-in'} image={'Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startMonth={"feb"} startYear={"2017"} finishMonth={"dec"} finishYear={"2019"} careerName={'business-computing'} />
                     <StudyCard animation={'zoom-in'} image={'Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} />
                 </div>
+                <Footer />
             </div>
         </>
     )

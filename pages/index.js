@@ -39,7 +39,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white'>
+    <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white pt-10 pb-32 relative'>
       <Head>
         <title>Kevin Sequeira Garita</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

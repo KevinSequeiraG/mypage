@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
+import Footer from "../../components/sections/footer";
 import Tool from "../../components/tool";
 
 const AboutMe = () => {
@@ -9,7 +10,7 @@ const AboutMe = () => {
     let softSkills = ["teamwork", "work-under-pressure", "puntuality", "ease-of-adaptation", "problem-resolution"]
 
     return (
-        <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen py-10'>
+        <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen pt-10 pb-32 relative'>
             <div className="relative ml-5">
                 <Link href={'/'}><button className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button></Link>
                 <SettingsBtn />
@@ -30,6 +31,7 @@ const AboutMe = () => {
                     return (<Tool key={i} tool={skill} />)
                 })}
             </ul>
+            <Footer />
         </div>
     )
 }
