@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from '@next/font/google'
 import StudiesModal from '../components/modals/studiesModal'
 import LaboralExpModal from '../components/modals/laboralExpModal'
 import PersonalProjectsModal from '../components/modals/personalProjectsModal'
@@ -7,19 +6,13 @@ import AboutMeModal from '../components/modals/aboutMeModal'
 import Aos from 'aos'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-
 import '../public/multilanguage/i18n'
 import 'flowbite';
-import { useTheme } from 'next-themes'
 import SettingsBtn from '../components/buttons/settings/settingsBtn'
 import Footer from '../components/sections/footer'
 
 export default function Home() {
-  const [t, i18n] = useTranslation();
-  const [showSettings, setShowSettings] = useState(false)
-  const [firstClick, setFirstClick] = useState(false)
-  const { systemTheme, theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
+  const [t] = useTranslation();
 
   useEffect(() => {
     Aos.init({
@@ -27,7 +20,6 @@ export default function Home() {
     });
     setMounted(true)
 
-    console.log(document.getElementById('nav'));
     window.addEventListener('click', function (e) {
       if (document.getElementById('nav').contains(e.target)) {
         // Clicked in box

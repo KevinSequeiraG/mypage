@@ -1,4 +1,6 @@
+import Aos from "aos";
 import Link from "next/link";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import Footer from "../../components/sections/footer";
@@ -8,6 +10,12 @@ const AboutMe = () => {
     const { t } = useTranslation();
     let techSkills = ["ReactJS", "NextJS", "CSS3", "JS", "Tailwind", "Bootstrap", "Java", "C# .NET", "Python", "Git", "Sql Server", "Firebase", "AFRAME", "ARjs"]
     let softSkills = ["teamwork", "work-under-pressure", "puntuality", "ease-of-adaptation", "problem-resolution"]
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000
+        });
+    }, [])
 
     return (
         <div className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen pt-10 pb-32 relative'>

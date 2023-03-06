@@ -1,4 +1,6 @@
+import Aos from "aos";
 import Link from "next/link";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import StudyCard from "../../components/cards/StudyCard";
@@ -6,6 +8,12 @@ import Footer from "../../components/sections/footer";
 
 const Studies = () => {
     const { t } = useTranslation();
+
+    useEffect(() => {
+        Aos.init({
+            duration: 2000
+        });
+    }, [])
 
     return (
         <>
