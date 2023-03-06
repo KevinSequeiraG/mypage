@@ -18,7 +18,6 @@ export default function Home() {
     Aos.init({
       duration: 2000
     });
-    setMounted(true)
 
     window.addEventListener('click', function (e) {
       if (document.getElementById('nav').contains(e.target)) {
