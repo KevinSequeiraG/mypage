@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn"
 import ProjectByMeCard from "../../components/cards/projectByMeCard"
+import '../../public/multilanguage/i18n';
 
 const MyOwnProjects = () => {
     const { t } = useTranslation();
@@ -29,16 +30,16 @@ const MyOwnProjects = () => {
                     <ProjectByMeCard animation={'zoom-in'} image={''} name={"Gestion de activos, préstamos y traslados"} startMonth={"feb"} startYear={"2017"} finishMonth={"dec"} finishYear={"2019"} careerName={'business-computing'} />
                     <ProjectByMeCard animation={'zoom-in'} image={''} name={"Aplicación de venta de entradas a diferentes eventos"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} />
                     <ProjectByMeCard animation={'zoom-in'} image={''} name={"Página web de restaurante de comida china"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} /> */}
-                    <ProjectByMeCard link={"https://ksgsports.netlify.app/"} animation={'zoom-in'} image={'Images/ksgsports.png'} name={"Página web deportiva"}/>
-                    <ProjectByMeCard link={"https://covid19kevin.netlify.app/"} animation={'zoom-in'} image={'Images/covid.png'} name={"Página web informativa del Covid"}/>
-                    <ProjectByMeCard link={"https://kevinsequeirag.netlify.app/"} animation={'zoom-in'} image={'Images/cv.png'} name={"Curriculum online"}/>
-                    <ProjectByMeCard link={"https://frontendstoreksg2.netlify.app/"} animation={'zoom-in'} image={'Images/tienda1.png'} name={"Visual de tienda sensilla"}/>
-                    <ProjectByMeCard link={"https://frontendstoreksg.netlify.app/"} animation={'zoom-in'} image={'Images/tienda1.png'} name={"Tienda de ropa"}/>
-                    <ProjectByMeCard link={"https://blogviajesksg.netlify.app/"} animation={'zoom-in'} image={'Images/viajes.png'} name={"Blog de viajes"}/>
-                    <ProjectByMeCard link={"https://blogcafeksg.netlify.app/"} animation={'zoom-in'} image={'Images/cafe.png'} name={"Blog de café"}/>
-                    <ProjectByMeCard link={"https://bienesraicesksg.netlify.app/"} animation={'zoom-in'} image={'Images/bienesraices.png'} name={"Página de bienes raíces"}/>
-                    <ProjectByMeCard link={"https://freelancerksg.netlify.app/"} animation={'zoom-in'} image={'Images/formulario.png'} name={"Diseño de formulario"}/>
-                    <ProjectByMeCard link={"https://xmlloadksg.netlify.app/"} animation={'zoom-in'} image={'Images/xmlpage.png'} name={"Carga desde XML"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/ksgsports" link={"https://ksgsports.netlify.app/"} animation={'zoom-in'} image={'Images/ksgsports.png'} name={"Página web deportiva"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/covidpage" link={"https://covid19kevin.netlify.app/"} animation={'zoom-in'} image={'Images/covid.png'} name={"Página web informativa del Covid"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/mycv" link={"https://kevinsequeirag.netlify.app/"} animation={'zoom-in'} image={'Images/cv.png'} name={"Curriculum online"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/clothingstore" link={"https://frontendstoreksg2.netlify.app/"} animation={'zoom-in'} image={'Images/tienda1.png'} name={"Visual de tienda sensilla"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/clothingstore2" link={"https://frontendstoreksg.netlify.app/"} animation={'zoom-in'} image={'Images/tienda2.png'} name={"Tienda de ropa"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/travelblog" link={"https://blogviajesksg.netlify.app/"} animation={'zoom-in'} image={'Images/viajes.png'} name={"Blog de viajes"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/coffeeblog" link={"https://blogcafeksg.netlify.app/"} animation={'zoom-in'} image={'Images/cafe.png'} name={"Blog de café"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/realestate" link={"https://bienesraicesksg.netlify.app/"} animation={'zoom-in'} image={'Images/bienesraices.png'} name={"Página de bienes raíces"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/formDesign" link={"https://freelancerksg.netlify.app/"} animation={'zoom-in'} image={'Images/formulario.png'} name={"Diseño de formulario"}/>
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/xmlLoad" link={"https://xmlloadksg.netlify.app/"} animation={'zoom-in'} image={'Images/xmlpage.png'} name={"Carga desde XML"}/>
                 </div>
                 <Footer />
             </div>

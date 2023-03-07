@@ -10,6 +10,7 @@ import '../public/multilanguage/i18n'
 import 'flowbite';
 import SettingsBtn from '../components/buttons/settings/settingsBtn'
 import Footer from '../components/sections/footer'
+import '../public/multilanguage/i18n';
 
 export default function Home() {
   const [t] = useTranslation();

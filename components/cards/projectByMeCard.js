@@ -14,7 +14,7 @@ const ProjectByMeCard = (props) => {
                     <h2 className="my-2">{props.name}</h2>
                     <div className="flex">
                         <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-page")}</button>
-                        <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-repo")}</button>
+                        <button onClick={() => { Router.push(props.repolink) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-repo")}</button>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import MoreOfJobModal from "../../components/modals/moreOfJobModal";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import WorkExpCard from "../../components/cards/workExpCard";
 import Footer from "../../components/sections/footer";
+import '../../public/multilanguage/i18n';
 
 const WorkExperience = () => {
     const { t } = useTranslation();

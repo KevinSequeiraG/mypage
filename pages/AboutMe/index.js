@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import Footer from "../../components/sections/footer";
 import Tool from "../../components/tool";
+import '../../public/multilanguage/i18n';
 
 const AboutMe = () => {
     const { t } = useTranslation();
