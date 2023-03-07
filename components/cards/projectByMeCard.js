@@ -10,11 +10,11 @@ const ProjectByMeCard = (props) => {
                 <div className="h-[50%]">
                     <img className="rounded-xl w-full mx-auto max-h-[10rem] min-h-[10rem] object-cover" src={props.image}></img>
                 </div>
-                <div className="h-[50%] flex flex-wrap items-center justify-center content-center flex-col mt-4">
+                <div className="h-[50%] flex items-center justify-center content-center flex-col mt-4">
                     <h2 className="my-2">{props.name}</h2>
-                    <div>
-                        <button onClick={() => { Router.push(props.link) }} className="mx-2 text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-page")}</button>
-                        <button onClick={() => { Router.push(props.link) }} className="mx-2 text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-repo")}</button>
+                    <div className="flex">
+                        <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-page")}</button>
+                        <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-repo")}</button>
                     </div>
                 </div>
             </div>
