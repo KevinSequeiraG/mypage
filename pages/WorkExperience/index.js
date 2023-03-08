@@ -7,6 +7,7 @@ import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import WorkExpCard from "../../components/cards/workExpCard";
 import Footer from "../../components/sections/footer";
 import '../../public/multilanguage/i18n';
+import Head from "next/head";
 
 const WorkExperience = () => {
     const { t } = useTranslation();
@@ -20,6 +21,11 @@ const WorkExperience = () => {
 
     return (
         <>
+            <Head>
+                <title>Kevin Sequeira Garita</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="author" content="Kevin Steven Sequeira Garita"></meta>\
+            </Head>
             <div className="">
                 <div id="workExpWindow" className="relative bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen pt-10 pb-32 relative">
                     <div className="relative ml-5">
