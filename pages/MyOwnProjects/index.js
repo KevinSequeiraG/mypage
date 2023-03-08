@@ -50,7 +50,7 @@ const MyOwnProjects = () => {
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/realestate" link={"https://bienesraicesksg.netlify.app/"} animation={'zoom-in'} image={'Images/bienesraices.png'} name={"Página de bienes raíces"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/formDesign" link={"https://freelancerksg.netlify.app/"} animation={'zoom-in'} image={'Images/formulario.png'} name={"Diseño de formulario"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/xmlLoad" link={"https://xmlloadksg.netlify.app/"} animation={'zoom-in'} image={'Images/xmlpage.png'} name={"Carga desde XML"} />
-                    <ProjectByMeCardDesk galleryImages={["Images/carrito.png", "Images/crudProducts.png", "Images/CrudTable1.png", "Images/CrudTable2.png", "Images/CUPON CON DESC.png", "Images/EstadosMesas.png", "Images/login.png", "Images/pagar.png", "Images/Register.png", "Images/REPORTE DE VENTAS.png", "Images/REPORTES POR FECHAS.png", "Images/REPORTESPORPAGO.png"]} repolink="https://github.com/KevinSequeiraG/koefood" animation={'zoom-in'} image={'Images/xmlpage.png'} name={"KOE App"} />
+                    <ProjectByMeCardDesk galleryImages={["Images/carrito.png", "Images/crudProducts.png", "Images/CrudTable1.png", "Images/CrudTable2.png", "Images/CUPON CON DESC.png", "Images/EstadosMesas.png", "Images/login.png", "Images/pagar.png", "Images/Register.png", "Images/REPORTE DE VENTAS.png", "Images/REPORTES POR FECHAS.png", "Images/REPORTESPORPAGO.png"]} repolink="https://github.com/KevinSequeiraG/koefood" animation={'zoom-in'} image={'Images/login.png'} name={"KOE App"} />
                     
                 </div>
                 <Footer />
