@@ -26,7 +26,7 @@ const Test = () => {
   useEffect(() => {
     componentDidMount()
   }, [])
-  
+
 
   return (
     <div style={{ height: '100%', width: '100%' }}>
@@ -38,7 +38,8 @@ const Test = () => {
 
       {appRendered ?
         <>
-          <div className='absolute top-5'>
+          <div className="relative ml-5">
+            <Link href={'/'}><button className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button></Link>
             <SettingsBtn />
           </div>
           <Scene>
@@ -56,7 +57,7 @@ const Test = () => {
               <a-text value={"Habilidades blandas"} height="4" width="4" position="-.8 2 .1"></a-text>
             </a-plane>
             <a-plane color="red" height="5" width="3" position="4 2 -2" rotation="0 -70 0">
-            <a-text value={"Habilidades técnicas"} height="4" width="4" position="-.8 2 .1"></a-text>
+              <a-text value={"Habilidades técnicas"} height="4" width="4" position="-.8 2 .1"></a-text>
             </a-plane>
 
             <Entity text={{ value: 'kevin', align: 'center' }} position={{ x: 0, y: 2, z: -1 }} />
@@ -77,7 +78,7 @@ const Test = () => {
               <Entity primitive="a-cursor" animation__click={{ property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150 }} />
             </Entity>
           </Scene>
-        </>:null
+        </> : null
       }
     </div>
   )
