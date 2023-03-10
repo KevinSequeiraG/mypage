@@ -11,6 +11,8 @@ import 'flowbite';
 import SettingsBtn from '../components/buttons/settings/settingsBtn'
 import Footer from '../components/sections/footer'
 import '../public/multilanguage/i18n';
+import { Scene } from 'aframe-react'
+import Link from 'next/link'
 
 export default function Home() {
   const [t] = useTranslation();
@@ -71,7 +73,17 @@ export default function Home() {
         <div data-aos="fade-right" className='flex my-32 justify-end'>
           <AboutMeModal />
         </div>
-
+        <div data-aos="fade-left" className='flex my-32'>
+        <div className="border-2 border-gray-400 dark:border-gray-500 md:w-[45%] w-[90%] md:mx-0 mx-auto px-4 md:px-7 py-5 rounded-lg justify-content BoxShadow text-white font-semibold">
+            <h2 className="text-[1.4rem] md:text-[2rem] mb-4">Ver habilidades tecnicas y blandas en VR</h2>
+            <p className="text-[.8rem] md:text-[1rem] text-justify"></p>
+            <div className="w-full text-right">
+                <Link href={"test"}>
+                    <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
+                </Link>
+            </div>
+        </div>
+        </div>
       </div>
 
       <Footer />
