@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Entity, Scene } from 'aframe-react';
 import SettingsBtn from '../../components/buttons/settings/settingsBtn';
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 
 const Test = () => {
   const [appRendered, setAppRendered] = useState(false)
