@@ -4,19 +4,20 @@ import LaboralExpModal from '../components/modals/laboralExpModal'
 import PersonalProjectsModal from '../components/modals/personalProjectsModal'
 import AboutMeModal from '../components/modals/aboutMeModal'
 import Aos from 'aos'
-import { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-//import '../public/multilanguage/i18n'
+import { useEffect } from 'react'
 import 'flowbite';
 import SettingsBtn from '../components/buttons/settings/settingsBtn'
 import Footer from '../components/sections/footer'
-//import '../public/multilanguage/i18n';
-import { Scene } from 'aframe-react'
 import Handsfree from 'handsfree'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import en from "../public/multilanguage/translations-en.json"
+import es from "../public/multilanguage/translations-es.json"
 
 export default function Home() {
-  const [t] = useTranslation();
+  const router = useRouter()
+  const { locale } = router;
+  const t = locale === "en" ? en : es
 
   useEffect(() => {
     Aos.init({
@@ -55,8 +56,8 @@ export default function Home() {
           <div className='float-left md:ml-7 ml-0 flex flex-col justify-between py-7'>
             <h1 className='text-[1.5rem] md:text-[6rem] md:text-left text-center md:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='md:text-[2rem]'>{t("job-title")}</p>
-              <p className='text-[.7rem] md:text-[1rem] text-justify font-semibold'>{t('professional-description')}</p>
+              <p className='md:text-[2rem]'>{t['job-title']}</p>
+              <p className='text-[.7rem] md:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
             </div>
           </div>
         </div>
@@ -80,7 +81,7 @@ export default function Home() {
             <p className="text-[.8rem] md:text-[1rem] text-justify"></p>
             <div className="w-full text-right">
               <Link href={"test"}>
-                <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("know-more")}</button>
+                <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
               </Link>
             </div>
           </div>

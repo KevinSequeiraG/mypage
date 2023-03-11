@@ -6,10 +6,14 @@ import { useTranslation } from "next-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import StudyCard from "../../components/cards/StudyCard";
 import Footer from "../../components/sections/footer";
-//import '../../public/multilanguage/i18n';
+import { useRouter } from 'next/router'
+import en from "../../public/multilanguage/translations-en.json"
+import es from "../../public/multilanguage/translations-es.json"
 
 const Studies = () => {
-    const { t } = useTranslation();
+    const router = useRouter()
+    const { locale } = router;
+    const t = locale === "en" ? en : es
 
     useEffect(() => {
         Aos.init({
@@ -31,12 +35,12 @@ const Studies = () => {
                     <SettingsBtn />
                 </div>
                 <div className="w-full text-center">
-                    <h1 className="text-[1.8rem] font-bold text-center italic">{t("my-studies")}</h1>
+                    <h1 className="text-[1.8rem] font-bold text-center italic">{t["my-studies"]}</h1>
                 </div>
                 <div className="md:flex">
-                    <StudyCard animation={'zoom-in'} image={'Images/utn.png'} name={"Universidad Técnica Nacional"} startMonth={"jan"} startYear={"2020"} finishMonth={"current"} finishYear={""} careerName={'software-engineering'} />
-                    <StudyCard animation={'zoom-in'} image={'Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startMonth={"feb"} startYear={"2017"} finishMonth={"dec"} finishYear={"2019"} careerName={'business-computing'} />
-                    <StudyCard animation={'zoom-in'} image={'Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} />
+                    <StudyCard animation={'zoom-in'} image={'../Images/utn.png'} name={"Universidad Técnica Nacional"} startMonth={"jan"} startYear={"2020"} finishMonth={"current"} finishYear={""} careerName={'software-engineering'} />
+                    <StudyCard animation={'zoom-in'} image={'../Images/calufa.jpg'} name={"Colegio técnico nacional Carlos Luis Fallas"} startMonth={"feb"} startYear={"2017"} finishMonth={"dec"} finishYear={"2019"} careerName={'business-computing'} />
+                    <StudyCard animation={'zoom-in'} image={'../Images/grego.jpg'} name={"Colegio Grogorio José Ramírez"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} />
                 </div>
                 <Footer />
             </div>

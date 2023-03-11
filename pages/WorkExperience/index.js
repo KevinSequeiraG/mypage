@@ -1,16 +1,19 @@
 import Aos from "aos";
 import Link from "next/link";
 import { useEffect } from "react";
-import { useTranslation } from "next-i18next";
 import MoreOfJobModal from "../../components/modals/moreOfJobModal";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import WorkExpCard from "../../components/cards/workExpCard";
 import Footer from "../../components/sections/footer";
-//import '../../public/multilanguage/i18n';
+import { useRouter } from 'next/router'
+import en from "../../public/multilanguage/translations-en.json"
+import es from "../../public/multilanguage/translations-es.json"
 import Head from "next/head";
 
 const WorkExperience = () => {
-    const { t } = useTranslation();
+    const router = useRouter()
+    const { locale } = router;
+    const t = locale === "en" ? en : es
 
     useEffect(() => {
         Aos.init({
@@ -34,11 +37,11 @@ const WorkExperience = () => {
                     </div>
 
                     <div className="w-full text-center">
-                        <h1 className="text-[1.4rem] mt-1 font-bold text-center italic">{t("my-work-experience")}</h1>
+                        <h1 className="text-[1.4rem] mt-1 font-bold text-center italic">{t["my-work-experience"]}</h1>
                     </div>
                     <div className="md:flex">
-                        <WorkExpCard tools={["Next-js", "Tailwind", "HTML5", "Firebase"]} animation={'zoom-in'} description={"job-desc-doit"} image={'Images/Doit.jpg'} name={"DoitXR"} startMonth={"aug"} startYear={"2022"} finishMonth={"current"} finishYear={""} position={'soft-engineer'} />
-                        <WorkExpCard tools={["React-js", "Bootstrap", "HTML5", "AFRAME", "ARjs"]} animation={'zoom-in'} description={"job-desc-immerso"} image={'Images/Immerso.jpg'} name={"Immerso"} startMonth={"feb"} startYear={"2022"} finishMonth={"sep"} finishYear={"2022"} position={'soft-engineer'} />
+                        <WorkExpCard tools={["Next-js", "Tailwind", "HTML5", "Firebase"]} animation={'zoom-in'} description={"job-desc-doit"} image={'../Images/Doit.jpg'} name={"DoitXR"} startMonth={"aug"} startYear={"2022"} finishMonth={"current"} finishYear={""} position={'soft-engineer'} />
+                        <WorkExpCard tools={["React-js", "Bootstrap", "HTML5", "AFRAME", "ARjs"]} animation={'zoom-in'} description={"job-desc-immerso"} image={'../Images/Immerso.jpg'} name={"Immerso"} startMonth={"feb"} startYear={"2022"} finishMonth={"sep"} finishYear={"2022"} position={'soft-engineer'} />
                     </div>
 
                     <Footer />

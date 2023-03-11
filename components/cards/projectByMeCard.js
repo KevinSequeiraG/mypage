@@ -1,9 +1,14 @@
 import { useTranslation } from "next-i18next";
 import Router from "next/router";
+import { useRouter } from 'next/router'
+import en from "../../public/multilanguage/translations-en.json"
+import es from "../../public/multilanguage/translations-es.json"
 
 
 const ProjectByMeCard = (props) => {
-    const { t } = useTranslation();
+    const router = useRouter()
+    const { locale } = router;
+    const t = locale === "en" ? en : es
 
     return (
         <>
@@ -14,8 +19,8 @@ const ProjectByMeCard = (props) => {
                 <div className="h-[50%] flex items-center justify-center content-center flex-col mt-4">
                     <h2 className="my-2">{props.name}</h2>
                     <div className="flex">
-                        <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-page")}</button>
-                        <button onClick={() => { Router.push(props.repolink) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t("go-to-repo")}</button>
+                        <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-page"]}</button>
+                        <button onClick={() => { Router.push(props.repolink) }} className="mx-2 truncate text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-repo"]}</button>
                     </div>
                 </div>
             </div>

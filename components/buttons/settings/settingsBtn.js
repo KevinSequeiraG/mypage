@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Dropdown } from "flowbite-react";
 import { useTheme } from 'next-themes'
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 
 const SettingsBtn = () => {
     const [t, i18n] = useTranslation();
@@ -17,7 +18,7 @@ const SettingsBtn = () => {
         const currentTheme = theme === 'system' ? systemTheme : theme;
         if (currentTheme == "dark") {
             return (
-                <button onClick={() => { setTheme('light');  setShowSettings(false) }} className='flex mx-auto' >
+                <button onClick={() => { setTheme('light'); setShowSettings(false) }} className='flex mx-auto' >
                     <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
                     <button>
                         <span className="material-icons">dark_mode</span>
@@ -32,13 +33,6 @@ const SettingsBtn = () => {
                     </button>
                 </button>)
         }
-    }
-
-    const ChooseLng = (lng) => {
-        setTimeout(() => {
-            i18n.changeLanguage(lng);
-        }, 250);
-        setShowSettings(false) 
     }
 
     useEffect(() => {
@@ -62,11 +56,15 @@ const SettingsBtn = () => {
                 {/* Language config */}
                 <div className='justify-center mt-2 !overflow-hidden h-auto'>
                     <Dropdown onClick={() => { document.getElementById("settingsId").classList.contains("h-[13rem]") ? document.getElementById("settingsId").classList.remove("h-[13rem]") : document.getElementById("settingsId").classList.add("h-[13rem]") }} className={"!bg-blue-800 rounded-xl !text-white z-50 h-auto"} label={t("language")}>
-                        <Dropdown.Item className="!text-white hover:bg-gray-600" onClick={() => { ChooseLng("en"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
-                            English
+                        <Dropdown.Item className="!text-white hover:bg-gray-600" onClick={() => {document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
+                            <Link href={""} locale="en">
+                                English
+                            </Link>
                         </Dropdown.Item>
-                        <Dropdown.Item className="!text-white hover:bg-gray-600" onClick={() => { ChooseLng("es"); document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
-                            Español
+                        <Dropdown.Item className="!text-white hover:bg-gray-600" onClick={() => {document.getElementById("settingsId").classList.remove("h-[13rem]") }}>
+                            <Link href={""} locale="es">
+                                Español
+                            </Link>
                         </Dropdown.Item>
                     </Dropdown>
                 </div>
