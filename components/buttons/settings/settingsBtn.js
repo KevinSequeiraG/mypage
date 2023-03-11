@@ -20,17 +20,17 @@ const SettingsBtn = () => {
             return (
                 <button onClick={() => { setTheme('light'); setShowSettings(false) }} className='flex mx-auto' >
                     <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
-                    <button>
+                    <p>
                         <span className="material-icons">dark_mode</span>
-                    </button>
+                    </p>
                 </button>)
         } else {
             return (
                 <button onClick={() => { setTheme('dark'); setShowSettings(false) }} className='flex mx-auto' >
                     <p className='mr-5 text-[1.1rem] '>{t('theme')}</p>
-                    <button className="w-7 h-7">
+                    <p className="w-7 h-7">
                         <span className="material-icons">light_mode</span>
-                    </button>
+                    </p>
                 </button>)
         }
     }
