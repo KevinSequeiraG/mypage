@@ -9,7 +9,17 @@ const Test = () => {
   const [appRendered, setAppRendered] = useState(false)
   const [color, setColor] = useState("red")
   const [t] = useTranslation();
-
+  const [softSkills, setSoftSkills] = useState(["Teamwork",
+    "Ability to work under",
+    "Pressure",
+    "Puntuality",
+    "Ease of adaptation",
+    "Problem resolution"])
+  const [techSkills, setTechSkills] = useState(["Reactjs", "Nextjs", "HTML5", "CSS3", "Javascript", "Tailwind", "JAVA", "C# .net", "Python", "Git"])
+  const [techSkills2, setTechSkills2] = useState(["Firebase", "AFRAME", "ARjs", "SQL SERVER"])
+  let softHeight = 1.8
+  let techHeight = 1.8
+  let techHeight2 = 1.8
   const [title1, setTitle1] = useState("")
 
   const componentDidMount = () => {
@@ -22,6 +32,10 @@ const Test = () => {
   const changeColor = () => {
     const colors = ['red', 'orange', 'yellow', 'green', 'blue'];
     setColor(colors[Math.floor(Math.random() * colors.length)])
+  }
+
+  const renderSoftSkills = () => {
+    console.log("object");
   }
 
   useEffect(() => {
@@ -56,12 +70,33 @@ const Test = () => {
 
             <a-plane color="red" height="5" width="3" position="-4 2 -2" rotation="0 70 0">
               <a-text value={"Habilidades blandas"} height="4" width="4" position="-.8 2 .1"></a-text>
-            </a-plane>
-            <a-plane color="red" height="5" width="3" position="4 2 -2" rotation="0 -70 0">
-              <a-text value={"Habilidades técnicas"} height="4" width="4" position="-.8 2 .1"></a-text>
+              {
+                softSkills.map((skill, i) => {
+                  softHeight -= .33
+                  return (
+                    <a-text key={i} value={skill} height="4" width="4" position={`-.8 ${softHeight} .1`}></a-text>
+                  )
+                })
+              }
             </a-plane>
 
-            <Entity text={{ value: 'kevin', align: 'center' }} position={{ x: 0, y: 2, z: -1 }} />
+            <a-plane color="red" height="5" width="3" position="4 2 -2" rotation="0 -70 0">
+              <a-text value={"Habilidades tecnicas"} height="4" width="4" position="-.8 2 .1"></a-text>
+              {techSkills.map((skill, i) => {
+                techHeight -= .33
+                return (
+                  <a-text key={i} value={skill} height="4" width="4" position={`-1 ${techHeight} .1`}></a-text>
+                )
+              })}
+              {techSkills2.map((skill, i) => {
+                techHeight2 -= .33
+                return (
+                  <a-text key={i} value={skill} height="4" width="4" position={`.23 ${techHeight2} .1`}></a-text>
+                )
+              })}
+            </a-plane>
+
+            <Entity text={{ value: 'Kevin Sequeira Garita', align: 'center' }} position={{ x: 0, y: 2, z: -1 }} />
 
             <Entity id="box"
               geometry={{ primitive: 'box' }}
