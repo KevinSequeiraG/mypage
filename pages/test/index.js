@@ -4,6 +4,7 @@ import { Entity, Scene } from 'aframe-react';
 import SettingsBtn from '../../components/buttons/settings/settingsBtn';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
+import Router from "next/router";
 
 const Test = () => {
   const [appRendered, setAppRendered] = useState(false)
@@ -54,7 +55,7 @@ const Test = () => {
       {appRendered ?
         <>
           <div className="relative ml-5">
-            <Link href={'/'}><button className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button></Link>
+            <button onClick={()=>{console.log("object");Router.push("/")}} className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button>
             <SettingsBtn />
           </div>
           <Scene>
@@ -101,7 +102,7 @@ const Test = () => {
             <Entity id="box"
               geometry={{ primitive: 'box' }}
               material={{ color: color, opacity: 0.6 }}
-              animation__rotate={{ property: 'rotation', dur: 2000, loop: true, to: '360 360 360' }}
+              //animation__rotate={{ property: 'rotation', dur: 2000, loop: true, to: '360 360 360' }}
              // animation__scale={{ property: 'scale', dir: 'alternate', dur: 100, loop: true, to: '1.1 1.1 1.1' }}
               position={{ x: 0, y: 1, z: -3 }}
               events={{ click: changeColor.bind(this) }}>
