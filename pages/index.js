@@ -6,18 +6,17 @@ import AboutMeModal from '../components/modals/aboutMeModal'
 import Aos from 'aos'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import '../public/multilanguage/i18n'
+//import '../public/multilanguage/i18n'
 import 'flowbite';
 import SettingsBtn from '../components/buttons/settings/settingsBtn'
 import Footer from '../components/sections/footer'
-import '../public/multilanguage/i18n';
+//import '../public/multilanguage/i18n';
 import { Scene } from 'aframe-react'
 import Handsfree from 'handsfree'
 import Link from 'next/link'
 
 export default function Home() {
   const [t] = useTranslation();
-
 
   useEffect(() => {
     Aos.init({
@@ -32,33 +31,6 @@ export default function Home() {
         this.document.dispatchEvent(new CustomEvent("CloseSettings"))
       }
     });
-
-    // const handsfree = new Handsfree({
-    //   hands: true,
-
-    //   plugin: {
-    //     pinchScroll: {
-    //       enabled: true,
-
-    //       // Number of frames over the same element before activating that element
-    //       framesToFocus: 10,
-
-    //       // Number of pixels the middle and thumb tips must be near each other to drag
-    //       threshold: 50,
-
-    //       // Number of frames where a hold is not registered before releasing a drag
-    //       numThresholdErrorFrames: 5,
-
-    //       // Speed multiplier
-    //       speed: .5
-    //     }
-    //   }
-    // })
-    // // Scroll a little slower
-    // handsfree.plugin.pinchScroll.enable()
-    // handsfree.plugin.pinchScroll.config.speed = 2
-
-    // console.log(handsfree.data.hands.landmarks);
   }, [])
 
   return (

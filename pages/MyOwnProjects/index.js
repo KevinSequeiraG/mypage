@@ -3,15 +3,42 @@ import Footer from "../../components/sections/footer";
 import Head from "next/head";
 import Link from "next/link"
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn"
 import ProjectByMeCard from "../../components/cards/projectByMeCard"
 import ProjectByMeCardDesk from "../../components/cards/ProjectByMeCardDesk";
 import PersonalProjectDeskModal from "../../components/modals/personalProjectDeskModal";
 import '../../public/multilanguage/i18n';
+//import Handsfree from 'handsfree'
 
 const MyOwnProjects = () => {
     const { t } = useTranslation();
+
+    // const handsFreeActive = () => {
+    //     const handsfree = new Handsfree({
+    //         hands: {
+    //             enabled: true,
+    //             // The maximum number of hands to detect [0 - 4]
+    //             maxNumHands: 2,
+
+    //             // Minimum confidence [0 - 1] for a hand to be considered detected
+    //             minDetectionConfidence: 0.5,
+
+    //             // Minimum confidence [0 - 1] for the landmark tracker to be considered detected
+    //             // Higher values are more robust at the expense of higher latency
+    //             minTrackingConfidence: 0.5
+    //         }
+    //     })
+    //     // Enable plugins tagged with "browser"
+    //     handsfree.enablePlugins('browser')
+    //     // Start tracking
+    //     handsfree.start()
+    //     // handsfree.plugin.pinchScroll.enable()
+    //     // handsfree.plugin.pinchScroll.config.speed = 2
+
+    //     console.log(handsfree);
+    // }
+
 
     useEffect(() => {
         Aos.init({
@@ -25,7 +52,7 @@ const MyOwnProjects = () => {
                 <title>Kevin Sequeira Garita</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="author" content="Kevin Steven Sequeira Garita"></meta>
-                {/* <link rel="icon" href="/favicon.ico" /> */}
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <div id="MyOwnProjects" className='bg-gradient-to-br to-[#3950C3] from-[#9CECFB] dark:bg-gradient-to-br dark:to-[#3950C3] dark:from-black text-white min-h-screen pt-10 pb-32 relative'>
                 <div className="relative ml-5">
@@ -35,11 +62,9 @@ const MyOwnProjects = () => {
                 <div className="w-full text-center">
                     <h1 className="text-[1.8rem] font-bold text-center italic">{t("projects-made-by-own-learning")}</h1>
                 </div>
+
                 <div className="md:flex md:flex-wrap md:justify-center">
-                    {/* <ProjectByMeCard animation={'zoom-in'} image={''} name={"Certificaciones e informes digitales"} startMonth={"jan"} startYear={"2020"} finishMonth={"current"} finishYear={""} careerName={'software-engineering'} />
-                    <ProjectByMeCard animation={'zoom-in'} image={''} name={"Gestion de activos, préstamos y traslados"} startMonth={"feb"} startYear={"2017"} finishMonth={"dec"} finishYear={"2019"} careerName={'business-computing'} />
-                    <ProjectByMeCard animation={'zoom-in'} image={''} name={"Aplicación de venta de entradas a diferentes eventos"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} />
-                    <ProjectByMeCard animation={'zoom-in'} image={''} name={"Página web de restaurante de comida china"} startMonth={"feb"} startYear={"2012"} finishMonth={"dec"} finishYear={"2016"} careerName={'bachelor'} /> */}
+
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/ksgsports" link={"https://ksgsports.netlify.app/"} animation={'zoom-in'} image={'Images/ksgsports.png'} name={"Página web deportiva"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/covidpage" link={"https://covid19kevin.netlify.app/"} animation={'zoom-in'} image={'Images/covid.png'} name={"Página web informativa del Covid"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/mycv" link={"https://kevinsequeirag.netlify.app/"} animation={'zoom-in'} image={'Images/cv.png'} name={"Curriculum online"} />
@@ -51,10 +76,9 @@ const MyOwnProjects = () => {
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/formDesign" link={"https://freelancerksg.netlify.app/"} animation={'zoom-in'} image={'Images/formulario.png'} name={"Diseño de formulario"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/xmlLoad" link={"https://xmlloadksg.netlify.app/"} animation={'zoom-in'} image={'Images/xmlpage.png'} name={"Carga desde XML"} />
                     <ProjectByMeCardDesk galleryImages={["Images/carrito.png", "Images/crudProducts.png", "Images/CrudTable1.png", "Images/CrudTable2.png", "Images/CUPON CON DESC.png", "Images/EstadosMesas.png", "Images/login.png", "Images/pagar.png", "Images/Register.png", "Images/REPORTE DE VENTAS.png", "Images/REPORTES POR FECHAS.png", "Images/REPORTESPORPAGO.png"]} repolink="https://github.com/KevinSequeiraG/koefood" animation={'zoom-in'} image={'Images/login.png'} name={"KOE App"} />
-                    
-                <Footer />
+
+                    <Footer />
                 </div>
-                <PersonalProjectDeskModal />
             </div>
         </>
     )

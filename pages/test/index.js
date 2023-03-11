@@ -45,13 +45,7 @@ const Test = () => {
 
 
   return (
-    <div style={{ height: '100%', width: '100%' }}>
-      <Head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>A-Frame React Boilerplate</title>
-      </Head>
-
+    <div>
       {appRendered ?
         <>
           <div className="relative ml-5">

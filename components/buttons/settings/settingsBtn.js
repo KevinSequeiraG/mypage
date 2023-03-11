@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Dropdown } from "flowbite-react";
 import { useTheme } from 'next-themes'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const SettingsBtn = () => {
     const [t, i18n] = useTranslation();
@@ -47,7 +47,7 @@ const SettingsBtn = () => {
     }, [])
 
     return (
-        <nav id="nav" className='pl-8 pt-2 absolute left-0 z-50'>
+        <div id="nav" className='pl-8 pt-2 absolute left-0 z-50'>
             <ul>
                 <li>
                     <button onClick={() => { setShowSettings(!showSettings); setFirstClick(true) }}>
@@ -71,7 +71,7 @@ const SettingsBtn = () => {
                     </Dropdown>
                 </div>
             </div> : null}
-        </nav>
+        </div>
     )
 }
 

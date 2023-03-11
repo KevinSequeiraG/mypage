@@ -1,5 +1,6 @@
+import { useTranslation } from "next-i18next";
 import Router from "next/router";
-import { useTranslation } from "react-i18next";
+
 
 const ProjectByMeCard = (props) => {
     const { t } = useTranslation();

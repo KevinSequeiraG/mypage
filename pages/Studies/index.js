@@ -2,11 +2,11 @@ import Aos from "aos";
 import Head from "next/head";
 import Link from "next/link";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import StudyCard from "../../components/cards/StudyCard";
 import Footer from "../../components/sections/footer";
-import '../../public/multilanguage/i18n';
+//import '../../public/multilanguage/i18n';
 
 const Studies = () => {
     const { t } = useTranslation();

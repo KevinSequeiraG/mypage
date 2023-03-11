@@ -1,12 +1,12 @@
 import Aos from "aos";
 import Link from "next/link";
 import { useEffect } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import MoreOfJobModal from "../../components/modals/moreOfJobModal";
 import SettingsBtn from "../../components/buttons/settings/settingsBtn";
 import WorkExpCard from "../../components/cards/workExpCard";
 import Footer from "../../components/sections/footer";
-import '../../public/multilanguage/i18n';
+//import '../../public/multilanguage/i18n';
 import Head from "next/head";
 
 const WorkExperience = () => {
