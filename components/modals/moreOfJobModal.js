@@ -42,7 +42,7 @@ const MoreOfJobModal = (props) => {
                     <h3 className="font-bold text-[1.2rem] my-3">{t["tools-list"] + ":"}</h3>
                     <ul className="grid grid-cols-2 justify-center">
                         {JSON.parse([window.localStorage.getItem("job-tools")])?.map((tool, i) => {
-                            return <Tool tool={tool} />
+                            return <Tool key={i} tool={tool} />
                         })}
                     </ul>
                     {showProjects?<button onClick={()=>{setShowModal2(true)}} className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">Conocer proyectos</button>:null}
