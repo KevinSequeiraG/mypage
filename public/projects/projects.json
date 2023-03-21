@@ -1,0 +1,71 @@
+{
+    "immerso": [
+        {
+            "title": "immerso-page",
+            "description": "immerso-page-exp",
+            "videos": [
+                "/Videos/immersoWeb.mkv"
+            ],
+            "techSkills": [
+                "Reactjs",
+                "Git",
+                "HTML5",
+                "CSS",
+                "AFRAME",
+                "ARjs"
+            ],
+            "softSkills": [
+                "organization",
+                "self-learning"
+            ],
+            "link":"https://app.immerso.io/"
+        },
+        {
+            "title": "AR-application",
+            "description": "britt-explanation",
+            "videos": [
+                "/Videos/WebAr.mp4"
+            ],
+            "techSkills": [
+                "Reactjs",
+                "Git",
+                "HTML5",
+                "CSS",
+                "Bootstrap",
+                "AFRAME",
+                "ARjs"
+            ],
+            "softSkills": [
+                "teamwork",
+                "organization",
+                "self-learning"
+            ]
+        }
+    ],
+    "doit": [
+        {
+            "title": "web-app",
+            "description": "doit-webapp-desc",
+            "videos": [
+                "/Videos/doitRegis.mkv"
+            ],
+            "techSkills": [
+                "Nextjs",
+                "Tailwind",
+                "Firebase",
+                "CSS3",
+                "Git",
+                "Github"
+            ],
+            "softSkills": [                
+                "teamwork",
+                "organization",
+                "self-learning",
+                "work-under-pressure",
+                "puntuality",
+                "problem-resolution"
+            ],
+            "link":"https://www.eventplus.app/"
+        }
+    ]
+}

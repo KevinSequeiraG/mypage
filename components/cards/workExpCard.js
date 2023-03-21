@@ -11,6 +11,7 @@ const WorkExpCard = (props) => {
         window.localStorage.setItem("job-description", props.description)
         window.localStorage.setItem("job-tools", JSON.stringify(props.tools))
         window.localStorage.setItem("show-projects", JSON.stringify(props.showProjects))
+        window.localStorage.setItem("company-name", props.name)
         console.log(props.showProjects);
         document.getElementById("workExpCardBtn").dispatchEvent(new CustomEvent("opened-more-job"))
     }

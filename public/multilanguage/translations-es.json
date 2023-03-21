@@ -56,5 +56,7 @@
     "self-learning": "Auto aprendizaje",
     "immerso-page": "Página web de Immerso",
     "immerso-page-exp": "La página web principal de la empresa requería que se agregara la opcion de realidad aumentada y realidad virtual en cada uno de los tours disponibles.",
-    "see-page":"Ver página"
+    "see-page":"Ver página",
+    "web-app":"Aplicación web",
+    "doit-webapp-desc": "Se crea una aplicación capaz de administrar eventos, permitiendo que personas obtengan premios por participar en actividades, mientras que el rol de tipo administrativo o registrados pueden estar pendientes de llega o no al dicho evento."
 }
