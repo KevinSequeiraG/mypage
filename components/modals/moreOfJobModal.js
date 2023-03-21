@@ -61,30 +61,30 @@ const MoreOfJobModal = (props) => {
                 <div className="animate__animated animate__flipInX bg-gray-300 dark:bg-gray-800 w-[90%] min-w-[90%] min-h-[90%] lg:w-3/6 lg:px-6 lg:py-4 h-auto rounded-[1rem] top-10 left-[5%] lg:top-10 lg:left-30 -translate-x-1/2 -translate-y-1/2 absolute opacity-100 max-h-[50%] overflow-auto dark:text-gray-300">
                     {/* CARD */}
                     {
-                        projectsData.map(project => {
+                        projectsData.map((project,i) => {
                             return (
-                                <div className="border border-gray-400 text-center py-[1rem] lg:lg:mx-4 h-full py-10 rounded-[1rem]">
+                                <div key={i} className="border border-gray-400 text-center py-[1rem] lg:lg:mx-4 h-full py-10 rounded-[1rem]">
                                     <h3 className="text-[1.8rem] font-bold mb-4">{t[project.title]}</h3>
                                     <p className="w-[90%] mx-auto mb-6">{t[project.description]}</p>
                                     {
-                                        project.videos.map(video => {
-                                            return (<video controls src={video} style={{ width: '80%', height: '500px' }} className="mx-auto" loop />)
+                                        project.videos.map((video, i) => {
+                                            return (<video key={i} controls src={video} style={{ width: '80%', height: '500px' }} className="mx-auto" loop />)
                                         })
                                     }
                                     <div className="flex w-[90%] mx-auto justify-between mt-4">
                                         <div>
                                             <h4 className="text-[1.4rem] font-bold">{t["technologies"]}</h4>
                                             <ul className="text-left list-disc ml-5">
-                                                {project.techSkills.map(skill => {
-                                                    return (<li>{skill}</li>)
+                                                {project.techSkills.map((skill, i) => {
+                                                    return (<li key={i}>{skill}</li>)
                                                 })}
                                             </ul>
                                         </div>
                                         <div>
                                             <h4 className="text-[1.4rem] font-bold">{t["soft-skills"]}</h4>
                                             <ul className="text-left list-disc ml-5">
-                                                {project.softSkills.map(skill => {
-                                                    return (<li>{t[skill]}</li>)
+                                                {project.softSkills.map((skill, i) => {
+                                                    return (<li key={i}>{t[skill]}</li>)
                                                 })}
                                             </ul>
                                         </div>
