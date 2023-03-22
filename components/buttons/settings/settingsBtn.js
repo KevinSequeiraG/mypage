@@ -3,6 +3,7 @@ import { Dropdown } from "flowbite-react";
 import { useTheme } from 'next-themes'
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import SocialButtons from "../social/socialButtons";
 
 const SettingsBtn = () => {
     const [t, i18n] = useTranslation();
