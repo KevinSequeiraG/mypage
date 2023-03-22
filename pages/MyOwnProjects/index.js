@@ -69,7 +69,7 @@ const MyOwnProjects = () => {
                     <h1 className="text-[1.8rem] font-bold text-center italic">{t["projects-made-by-own-learning"]}</h1>
                 </div>
 
-                <div className="md:flex md:flex-wrap md:justify-center">
+                <div className="xl:flex xl:flex-wrap xl:justify-center">
 
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/ksgsports" link={"https://ksgsports.netlify.app/"} animation={'zoom-in'} image={"../Images/ksgsports.png"} name={"Página web deportiva"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/covidpage" link={"https://covid19kevin.netlify.app/"} animation={'zoom-in'} image={'../Images/covid.png'} name={"Página web informativa del Covid"} />

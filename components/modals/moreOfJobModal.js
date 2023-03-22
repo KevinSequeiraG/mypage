@@ -52,7 +52,7 @@ const MoreOfJobModal = (props) => {
                             return <Tool key={i} tool={tool} />
                         })}
                     </ul>
-                    {showProjects ? <button onClick={() => { setShowModal2(true) }} className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">Conocer proyectos</button> : null}
+                    {showProjects ? <button onClick={() => { setShowModal2(true) }} className="text-[.8rem] xl:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">Conocer proyectos</button> : null}
                 </div>
             </div> : null}
 

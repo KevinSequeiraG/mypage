@@ -49,21 +49,21 @@ export default function Home() {
 
 
       <div data-aos="fade-up" className='text-white min-h-screen'>
-        <div className='md:flex md:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+        <div className='xl:flex xl:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
           <div className='flex align-center w-full'>
-            <img alt='My photo' src='/Images/profile.jpg' className='w-[15rem] md:w-[20rem] md:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
+            <img alt='My photo' src='/Images/profile.jpg' className='w-[15rem] xl:w-[20rem] xl:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
-          <div className='float-left md:ml-7 ml-0 flex flex-col justify-between py-7'>
-            <h1 className='text-[1.5rem] md:text-[6rem] md:text-left text-center md:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
+          <div className='float-left xl:ml-7 ml-0 flex flex-col justify-between py-7'>
+            <h1 className='text-[1.5rem] xl:text-[6rem] xl:text-left text-center xl:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='md:text-[2rem]'>{t['job-title']}</p>
-              <p className='text-[.7rem] md:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
+              <p className='xl:text-[2rem]'>{t['job-title']}</p>
+              <p className='text-[.7rem] xl:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
             </div>
           </div>
         </div>
       </div>
-      <div className='md:px-[10rem] '>
-        <div data-aos="fade-left" className='flex md:my-32'>
+      <div className='xl:px-[10rem] '>
+        <div data-aos="fade-left" className='flex xl:my-32'>
           <StudiesModal />
         </div>
         <div data-aos="fade-right" className='flex my-32 justify-end'>
@@ -76,12 +76,12 @@ export default function Home() {
           <AboutMeModal />
         </div>
         <div data-aos="fade-left" className='flex my-32'>
-          <div className="border-2 border-gray-400 dark:border-gray-500 md:w-[45%] w-[90%] md:mx-0 mx-auto px-4 md:px-7 py-5 rounded-lg justify-content BoxShadow text-white font-semibold">
-            <h2 className="text-[1.4rem] md:text-[2rem] mb-4">Ver habilidades tecnicas y blandas en VR</h2>
-            <p className="text-[.8rem] md:text-[1rem] text-justify"></p>
+          <div className="border-2 border-gray-400 dark:border-gray-500 xl:w-[45%] w-[90%] xl:mx-0 mx-auto px-4 xl:px-7 py-5 rounded-lg justify-content BoxShadow text-white font-semibold">
+            <h2 className="text-[1.4rem] xl:text-[2rem] mb-4">Ver habilidades tecnicas y blandas en VR</h2>
+            <p className="text-[.8rem] xl:text-[1rem] text-justify"></p>
             <div className="w-full text-right">
               <Link href={"test"}>
-                <button className="text-[.8rem] md:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
+                <button className="text-[.8rem] xl:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
               </Link>
             </div>
           </div>
