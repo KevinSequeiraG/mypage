@@ -54,13 +54,14 @@ export default function Home() {
           <div className='flex align-center w-full'>
             <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[15rem] mdx1000:w-[20rem] mdx1000:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
-          <div className='float-left mdx1200:ml-7 ml-0 flex flex-col justify-between py-7'>
+          <div className='float-left mdx1700:ml-7 ml-0 flex flex-col justify-between py-7'>
             <h1 className='text-[1.5rem] mdx1200:text-[4rem] mdx1200:text-left text-center mdx1200:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
               <p className='mdx1200:text-[2rem]'>{t['job-title']}</p>
               <p className='text-[.7rem] mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
               <div className='mt-5'>
                 <SocialButtons />
+                <a href='https://drive.google.com/file/d/1GsSH8fV2QmG-ElFqPvBXOw1F9Im1tRCh/view?usp=sharing' className='border border-gray-400 hover:bg-gray-600 bg-gray-700 px-4 py-2 rounded-[20px]'>{t["cv"]}</a>
               </div>
             </div>
           </div>
