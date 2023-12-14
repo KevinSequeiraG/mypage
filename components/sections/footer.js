@@ -9,7 +9,7 @@ const Footer = () => {
     const t = locale === "en" ? en : es
 
     return (
-        <footer className="text-center pb-4 absolute bottom-0 lg:left-[50%] lg:translate-x-[-50%]">
+        <footer className="text-center pb-4 absolute bottom-0 mdx600:left-[50%] mdx600:translate-x-[-50%] mx-auto">
             <p className="text-[.7rem]">&copy; Copyright 2023 Kevin Steven Sequeira Garita</p>
             <p className="text-[.7rem] mb-2">{t["footer-explication"]}<a href="https://github.com/KevinSequeiraG/mypage" className="text-yellow-300"> {t["visit"]}</a></p>
             <SocialButtons />

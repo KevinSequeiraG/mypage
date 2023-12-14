@@ -39,7 +39,7 @@ const WorkExperience = () => {
                     <div className="w-full text-center">
                         <h1 className="text-[1.4rem] mt-1 font-bold text-center italic">{t["my-work-experience"]}</h1>
                     </div>
-                    <div className="xl:flex">
+                    <div className="mdx1200:flex">
                         <WorkExpCard showProjects={true} tools={["Next-js", "Tailwind", "HTML5", "Firebase"]} animation={'zoom-in'} description={"job-desc-doit"} image={'../Images/Doit.jpg'} name={"DoitXR"} startMonth={"aug"} startYear={"2022"} finishMonth={"current"} finishYear={""} position={'soft-engineer'} />
                         <WorkExpCard showProjects={true} tools={["React-js", "Bootstrap", "HTML5", "AFRAME", "ARjs"]} animation={'zoom-in'} description={"job-desc-immerso"} image={'../Images/Immerso.jpg'} name={"Immerso"} startMonth={"feb"} startYear={"2022"} finishMonth={"sep"} finishYear={"2022"} position={'soft-engineer'} />
                     </div>

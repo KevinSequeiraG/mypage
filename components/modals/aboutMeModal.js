@@ -9,12 +9,12 @@ const AboutMeModal = () => {
     const t = locale === "en" ? en : es
 
     return (
-        <div className="border-2 border-gray-400 dark:border-gray-500 xl:w-[45%] w-[90%] xl:mx-0 mx-auto px-4 xl:px-7 py-5 rounded-lg justify-content BoxShadow text-white">
-            <h2 className="text-[1.4rem] xl:text-[2rem] mb-4">{t["know-a-little-more-about-me"]}</h2>
-            <p className="text-[.8rem] xl:text-[1rem] text-justify">{t["about-me-explication"]}</p>
+        <div className="border-2 border-gray-400 dark:border-gray-500 mdx1200:w-[45%] w-[90%] mdx1200:mx-0 mx-auto px-4 mdx1200:px-7 py-5 rounded-lg justify-content BoxShadow text-white">
+            <h2 className="text-[1.4rem] mdx1200:text-[2rem] mb-4">{t["know-a-little-more-about-me"]}</h2>
+            <p className="text-[.8rem] mdx1200:text-[1rem] text-justify">{t["about-me-explication"]}</p>
             <div className="w-full text-right">
                 <Link href={"AboutMe"}>
-                    <button className="text-[.8rem] xl:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
+                    <button className="text-[.8rem] mdx1200:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
                 </Link>
             </div>
         </div>

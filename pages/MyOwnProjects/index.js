@@ -69,9 +69,11 @@ const MyOwnProjects = () => {
                     <h1 className="text-[1.8rem] font-bold text-center italic">{t["projects-made-by-own-learning"]}</h1>
                 </div>
 
-                <div className="xl:flex xl:flex-wrap xl:justify-center">
+                <div className="mdx1200:flex mdx1200:flex-wrap mdx1200:justify-center">
 
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/ksgsports" link={"https://ksgsports.netlify.app/"} animation={'zoom-in'} image={"../Images/ksgsports.png"} name={"Página web deportiva"} />
+                    <ProjectByMeCardDesk galleryImages={["../Images/carrito.png", "../Images/crudProducts.png", "../Images/CrudTable1.png", "../Images/CrudTable2.png", "../Images/CUPON CON DESC.png", "../Images/EstadosMesas.png", "../Images/login.png", "../Images/pagar.png", "../Images/Register.png", "../Images/REPORTE DE VENTAS.png", "../Images/REPORTES POR FECHAS.png", "../Images/REPORTESPORPAGO.png"]} repolink="https://github.com/KevinSequeiraG/koefood" animation={'zoom-in'} image={'../Images/login.png'} name={"KOE App"} />
+                    <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/armour-web" link={"https://armour-web-byi6.vercel.app/login"} animation={'zoom-in'} image={'../Images/ArmourWeb.png'} name={"ArmourWeb"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/covidpage" link={"https://covid19kevin.netlify.app/"} animation={'zoom-in'} image={'../Images/covid.png'} name={"Página web informativa del Covid"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/mycv" link={"https://kevinsequeirag.netlify.app/"} animation={'zoom-in'} image={'../Images/cv.png'} name={"Curriculum online"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/clothingstore" link={"https://frontendstoreksg2.netlify.app/"} animation={'zoom-in'} image={'../Images/tienda1.png'} name={"Visual de tienda sensilla"} />
@@ -81,8 +83,6 @@ const MyOwnProjects = () => {
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/realestate" link={"https://bienesraicesksg.netlify.app/"} animation={'zoom-in'} image={'../Images/bienesraices.png'} name={"Página de bienes raíces"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/formDesign" link={"https://freelancerksg.netlify.app/"} animation={'zoom-in'} image={'../Images/formulario.png'} name={"Diseño de formulario"} />
                     <ProjectByMeCard repolink="https://github.com/KevinSequeiraG/xmlLoad" link={"https://xmlloadksg.netlify.app/"} animation={'zoom-in'} image={'../Images/xmlpage.png'} name={"Carga desde XML"} />
-                    <ProjectByMeCardDesk galleryImages={["../Images/carrito.png", "../Images/crudProducts.png", "../Images/CrudTable1.png", "../Images/CrudTable2.png", "../Images/CUPON CON DESC.png", "../Images/EstadosMesas.png", "../Images/login.png", "../Images/pagar.png", "../Images/Register.png", "../Images/REPORTE DE VENTAS.png", "../Images/REPORTES POR FECHAS.png", "../Images/REPORTESPORPAGO.png"]} repolink="https://github.com/KevinSequeiraG/koefood" animation={'zoom-in'} image={'../Images/login.png'} name={"KOE App"} />
-
                     <Footer />
                 </div>
                 <PersonalProjectDeskModal />

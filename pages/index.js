@@ -50,15 +50,15 @@ export default function Home() {
 
 
       <div data-aos="fade-up" className='text-white min-h-screen'>
-        <div className='xl:flex xl:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+        <div className='mdx1500:flex mdx1000:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
           <div className='flex align-center w-full'>
-            <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[15rem] xl:w-[20rem] xl:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
+            <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[15rem] mdx1000:w-[20rem] mdx1000:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
-          <div className='float-left xl:ml-7 ml-0 flex flex-col justify-between py-7'>
-            <h1 className='text-[1.5rem] xl:text-[4rem] xl:text-left text-center xl:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
+          <div className='float-left mdx1200:ml-7 ml-0 flex flex-col justify-between py-7'>
+            <h1 className='text-[1.5rem] mdx1200:text-[4rem] mdx1200:text-left text-center mdx1200:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='xl:text-[2rem]'>{t['job-title']}</p>
-              <p className='text-[.7rem] xl:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
+              <p className='mdx1200:text-[2rem]'>{t['job-title']}</p>
+              <p className='text-[.7rem] mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
               <div className='mt-5'>
                 <SocialButtons />
               </div>
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
 
       </div>
-      <div className='xl:px-[10rem] '>
+      <div className='mdx1200:px-[10rem] '>
         <div data-aos="fade-right" className='flex my-32'>
           <PersonalProjectsModal />
         </div>
@@ -77,16 +77,16 @@ export default function Home() {
         <div data-aos="fade-right" className='flex my-32'>
           <AboutMeModal />
         </div>
-        <div data-aos="fade-left" className='flex xl:my-32 justify-end'>
+        <div data-aos="fade-left" className='flex mdx1200:my-32 justify-end'>
           <StudiesModal />
         </div>
         <div data-aos="fade-left" className='flex my-32'>
-          <div className="border-2 border-gray-400 dark:border-gray-500 xl:w-[45%] w-[90%] xl:mx-0 mx-auto px-4 xl:px-7 py-5 rounded-lg justify-content BoxShadow text-white font-semibold">
-            <h2 className="text-[1.4rem] xl:text-[2rem] mb-4">Ver habilidades tecnicas y blandas en VR</h2>
-            <p className="text-[.8rem] xl:text-[1rem] text-justify"></p>
+          <div className="border-2 border-gray-400 dark:border-gray-500 mdx1200:w-[45%] w-[90%] mdx1200:mx-0 mx-auto px-4 mdx1200:px-7 py-5 rounded-lg justify-content BoxShadow text-white font-semibold">
+            <h2 className="text-[1.4rem] mdx1200:text-[2rem] mb-4">{t["See-technical-and-soft-skills-in-VR"]}</h2>
+            <p className="text-[.8rem] mdx1200:text-[1rem] text-justify"></p>
             <div className="w-full text-right">
               <Link href={"test"}>
-                <button className="text-[.8rem] xl:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
+                <button className="text-[.8rem] mdx1200:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["know-more"]}</button>
               </Link>
             </div>
           </div>
