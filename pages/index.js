@@ -50,7 +50,7 @@ export default function Home() {
 
 
       <div data-aos="fade-up" className='text-white min-h-screen'>
-        <div className='mdx1500:flex mdx1000:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+        <div className='mdx1700:flex mdx1000:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
           <div className='flex align-center w-full'>
             <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[15rem] mdx1000:w-[20rem] mdx1000:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
