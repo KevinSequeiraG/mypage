@@ -1,6 +1,6 @@
 const SocialButtons = () => {
     return (
-        <div className="social-icon ">
+        <div className="social-icon !flex">
             {/* Instagram */}
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"

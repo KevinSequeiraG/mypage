@@ -58,10 +58,10 @@ export default function Home() {
             <h1 className='text-[1.5rem] mdx1200:text-[4rem] mdx1200:text-left text-center mdx1200:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
               <p className='mdx1200:text-[2rem]'>{t['job-title']}</p>
-              <p className='text-[.7rem] mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
-              <div className='mt-5'>
+              <p className='w-[100%] text-[.7rem] mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
+              <div className='mt-5 flex items-center flex-col mdx600:flex-row'>
                 <SocialButtons />
-                <a href='https://drive.google.com/file/d/1GsSH8fV2QmG-ElFqPvBXOw1F9Im1tRCh/view?usp=sharing' className='border border-gray-400 hover:bg-gray-600 bg-gray-700 px-4 py-2 rounded-[20px]'>{t["cv"]}</a>
+                <a href='https://drive.google.com/file/d/1GsSH8fV2QmG-ElFqPvBXOw1F9Im1tRCh/view?usp=sharing' className='mt-3 mdx600:mt-0 border border-gray-400 hover:bg-gray-600 bg-gray-700 px-4 py-2 rounded-[20px]'>{t["cv"]}</a>
               </div>
             </div>
           </div>
