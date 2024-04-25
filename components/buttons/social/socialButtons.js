@@ -43,7 +43,7 @@ const SocialButtons = () => {
             {/* LinkedIn */}
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
-                href="www.linkedin.com/in/kevin-steven-sequeira-garita"
+                href="https://www.linkedin.com/in/kevin-steven-sequeira-garita/"
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
