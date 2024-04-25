@@ -2,7 +2,7 @@ const SocialButtons = () => {
     return (
         <div className="social-icon !flex">
             {/* Instagram */}
-            <a
+            {/* <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
                 href="https://www.instagram.com/kevin.07.sg/?next=%2F"
             >
@@ -13,9 +13,9 @@ const SocialButtons = () => {
                     }
                     alt=""
                 />
-            </a>
+            </a> */}
             {/* Facebook */}
-            <a
+            {/* <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
                 href="https://www.facebook.com/profile.php?id=100075126656673"
             >
@@ -26,7 +26,7 @@ const SocialButtons = () => {
                     }
                     alt=""
                 />
-            </a>
+            </a> */}
             {/* Whatsapp */}
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"

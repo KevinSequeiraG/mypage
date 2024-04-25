@@ -38,10 +38,12 @@ const Test = () => {
 
   return (
     <div>
+      <meta charset="UTF-8" />
+
       {appRendered ?
         <>
           <div className="relative ml-5">
-            <button onClick={() => {document.querySelector("html").classList.remove("a-fullscreen"); Router.push("/") }} className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button>
+            <button onClick={() => { document.querySelector("html").classList.remove("a-fullscreen"); Router.push("/") }} className="pt-2 absolute left-0 z-[51]"><span className="material-icons">arrow_back</span></button>
             <SettingsBtn />
           </div>
           <Scene >
@@ -66,9 +68,8 @@ const Test = () => {
                 })
               }
             </a-plane>
-
             <a-plane color="red" height="5" width="3" position="4 2 -2" rotation="0 -70 0">
-              <a-text value={"tech-skills"} height="4" width="4" position="-.8 2 .1"></a-text>
+              <a-text value={t["tech-skills"]} height="4" width="4" position="-.8 2 .1"></a-text>
               {techSkills.map((skill, i) => {
                 techHeight -= .33
                 return (
