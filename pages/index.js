@@ -57,7 +57,7 @@ export default function Home() {
           <div className='mdx1700:ml-7 ml-0 flex flex-col justify-between py-7'>
             <h1 className='text-[1.3rem] mdx600:text-[1.8rem] mdx800:text-[2.5rem] mdx1200:text-[3.5rem] mdx1200:text-left text-center mdx1200:leading-[4.5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='text-base mdx1200:text-[2rem]'>{t['job-title']}</p>
+              <p className='text-base mdx1200:text-[2rem] mb-3'>{t['job-title']}</p>
               <p className='w-[100%] text-sm mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
               <div className='mt-5 flex items-center flex-col mdx600:flex-row'>
                 <SocialButtons />
