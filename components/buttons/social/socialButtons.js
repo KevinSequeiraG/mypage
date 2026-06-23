@@ -61,9 +61,7 @@ const SocialButtons = () => {
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
-                    src={
-                        "/Images/Github_Logo.svg"
-                    }
+                    src="/Images/GitHub_Logo.svg"
                     alt=""
                 />
             </a>
