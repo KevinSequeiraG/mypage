@@ -31,6 +31,7 @@ const SocialButtons = () => {
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
                 href="https://api.whatsapp.com/send?phone=50684525658"
+                target="_blank" rel="noopener noreferrer"
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
@@ -44,6 +45,7 @@ const SocialButtons = () => {
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
                 href="https://www.linkedin.com/in/kevin-steven-sequeira-garita/"
+                target="_blank" rel="noopener noreferrer"
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
@@ -57,11 +59,12 @@ const SocialButtons = () => {
             <a
                 className="w-[50px] h-[50px] mdx1200:w-[40px] mdx1200:h-[40px] before:w-[60px] mdx1200:before:w-[40px] before:h-[60px] mdx1200:before:h-[40px]"
                 href="https://github.com/KevinSequeiraG"
+                target="_blank" rel="noopener noreferrer"
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
                     src={
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+                        "/Images/Github_Logo.svg"
                     }
                     alt=""
                 />

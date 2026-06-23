@@ -1,5 +1,4 @@
 import { useTranslation } from "next-i18next";
-import Router from "next/router";
 import { useRouter } from 'next/router'
 import en from "../../public/multilanguage/translations-en.json"
 import es from "../../public/multilanguage/translations-es.json"
@@ -13,7 +12,7 @@ const ProjectByMeCard = (props) => {
 
     return (
         <>
-            <div data-aos={props.animation} className="h-[25rem] shadow-lg shadow-white mdx1400:mt-32 mdx1400:mx-8 w-[85%] mdx1400:w-[20%] mx-auto border-2 border-white dark:border-[#B8B8B8] h-full rounded-xl my-8 py-5 px-3 text-center text-white font-semibold">
+            <div data-aos={props.animation} className="h-[25rem] shadow-lg shadow-white mdx1200:mt-16 mdx1400:mt-32 mdx1200:mx-4 mdx1400:mx-8 w-[85%] mdx1200:w-[45%] mdx1400:w-[28%] mx-auto border-2 border-white dark:border-[#B8B8B8] rounded-xl my-8 py-5 px-3 text-center text-white font-semibold overflow-hidden">
                 <div className="h-[50%]">
                     <img className="rounded-xl w-full mx-auto max-h-[10rem] min-h-[10rem] object-cover" src={props.image}></img>
                 </div>
@@ -22,8 +21,8 @@ const ProjectByMeCard = (props) => {
                     <p className="text-[.7rem]">{t[props.desc]}</p>
                     <div className="flex">
                         {props.isDownload && <Link href={props.downloadable} download><button className="mx-2 truncate text-[.8rem] mdx1400:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t['download']}</button></Link>}
-                        {!props.isDownload && <button onClick={() => { Router.push(props.link) }} className="mx-2 truncate text-[.8rem] mdx1400:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-page"]}</button>}
-                        <button onClick={() => { Router.push(props.repolink) }} className="mx-2 truncate text-[.8rem] mdx1400:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-repo"]}</button>
+                        {!props.isDownload && <button onClick={() => { window.open(props.link, '_blank', 'noopener,noreferrer') }} className="mx-2 truncate text-[.8rem] mdx1400:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-page"]}</button>}
+                        <button onClick={() => { window.open(props.repolink, '_blank', 'noopener,noreferrer') }} className="mx-2 truncate text-[.8rem] mdx1400:text-[1rem] bg-gray-500 dark:bg-black text-white px-3 py-1 rounded-xl border border-2 mt-6 font-bold">{t["go-to-repo"]}</button>
                     </div>
                 </div>
             </div>

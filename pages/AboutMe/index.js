@@ -41,13 +41,13 @@ const AboutMe = () => {
                 <p className="mt-3 text-justify  px-8">{t["profile-exp"]}</p>
 
                 <h2 className="mt-5 px-8">{t["tech-skills"]}:</h2>
-                <ul className="grid grid-cols-2 justify-center px-8">
+                <ul className="grid grid-cols-1 mdx600:grid-cols-2 justify-center px-8">
                     {techSkills.map((skill, i) => {
                         return (<Tool key={i} tool={skill} />)
                     })}
                 </ul>
                 <h2 className="mt-5 px-8">{t["soft-skills"]}:</h2>
-                <ul className="grid grid-cols-2 justify-center  px-8">
+                <ul className="grid grid-cols-1 mdx600:grid-cols-2 justify-center px-8">
                     {softSkills.map((skill, i) => {
                         return (<Tool key={i} skill={skill} />)
                     })}

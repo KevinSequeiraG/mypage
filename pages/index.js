@@ -49,26 +49,26 @@ export default function Home() {
       </div>
 
 
-      <div data-aos="fade-up" className='text-white min-h-screen'>
-        <div className='mdx1700:flex mdx1000:w-[70%] w-[80%] absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%]'>
+      <div data-aos="fade-up" className='text-white min-h-screen flex items-center justify-center py-8'>
+        <div className='mdx1700:flex w-[90%] mdx800:w-[80%] mdx1000:w-[70%]'>
           <div className='flex align-center w-full'>
-            <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[15rem] mdx1000:w-[20rem] mdx1000:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
+            <img alt='My photo' src='/Images/profile.jpg' className='object-cover w-[10rem] mdx600:w-[15rem] mdx1000:w-[20rem] mdx1000:h-[20rem] ProfileImage rounded-full border border-red-500 border-4 border-gray-500 mx-auto'></img>
           </div>
-          <div className='float-left mdx1700:ml-7 ml-0 flex flex-col justify-between py-7'>
-            <h1 className='text-[1.5rem] mdx1200:text-[4rem] mdx1200:text-left text-center mdx1200:leading-[5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
+          <div className='mdx1700:ml-7 ml-0 flex flex-col justify-between py-7'>
+            <h1 className='text-[1.3rem] mdx600:text-[1.8rem] mdx800:text-[2.5rem] mdx1200:text-[3.5rem] mdx1200:text-left text-center mdx1200:leading-[4.5rem] mb-6'>Kevin Steven Sequeira Garita</h1>
             <div>
-              <p className='mdx1200:text-[2rem]'>{t['job-title']}</p>
-              <p className='w-[100%] text-[.7rem] mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
+              <p className='text-base mdx1200:text-[2rem]'>{t['job-title']}</p>
+              <p className='w-[100%] text-sm mdx1200:text-[1rem] text-justify font-semibold'>{t['professional-description']}</p>
               <div className='mt-5 flex items-center flex-col mdx600:flex-row'>
                 <SocialButtons />
-                <a href='https://drive.google.com/file/d/1VofxotAW848HKiBIXBeaPCJSfn-1xdYW/view?usp=sharing' className='mt-3 mdx600:mt-0 border border-gray-400 hover:bg-gray-600 bg-gray-700 px-4 py-2 rounded-[20px]'>{t["cv"]}</a>
+                <a href='https://drive.google.com/file/d/1VofxotAW848HKiBIXBeaPCJSfn-1xdYW/view?usp=sharing' target="_blank" rel="noopener noreferrer" className='mt-3 mdx600:mt-0 border border-gray-400 hover:bg-gray-600 bg-gray-700 px-4 py-2 rounded-[20px]'>{t["cv"]}</a>
               </div>
             </div>
           </div>
         </div>
 
       </div>
-      <div className='mdx1200:px-[10rem] '>
+      <div className='px-4 mdx1200:px-[10rem]'>
         <div data-aos="fade-right" className='flex my-32'>
           <PersonalProjectsModal />
         </div>
