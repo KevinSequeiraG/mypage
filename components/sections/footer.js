@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
         <footer className="text-center pb-4 absolute bottom-0 w-full mdx600:w-auto mdx600:left-[50%] mdx600:translate-x-[-50%]">
-            <p className="text-xs">&copy; Copyright 2023 Kevin Steven Sequeira Garita</p>
+            <p className="text-xs">&copy; Copyright 2026 Kevin Steven Sequeira Garita</p>
             <p className="text-xs mb-2">{t["footer-explication"]}<a href="https://github.com/KevinSequeiraG/mypage" target="_blank" rel="noopener noreferrer" className="text-yellow-300"> {t["visit"]}</a></p>
             <SocialButtons />
         </footer>
