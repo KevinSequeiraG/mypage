@@ -49,9 +49,7 @@ const SocialButtons = () => {
             >
                 <img
                     className="w-[50%] mdx1200:w-[40%]"
-                    src={
-                        "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw"
-                    }
+                    src="/Images/LinkedIn_Logo.svg"
                     alt=""
                 />
             </a>
